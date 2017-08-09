@@ -37,3 +37,4 @@ after_success:
  - (cd windows_386; zip -r ../clay.windows-386.zip clay)
  - ls -la
  - ./upload.sh
+ - ./demo_build.sh
