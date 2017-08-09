@@ -1,0 +1,6285 @@
+{
+  "content": {
+    "connections": [
+      {
+        "id": 1,
+        "service_id": 1,
+        "protocol_id": 2,
+        "protocol": null,
+        "port_number": 22
+      },
+      {
+        "id": 2,
+        "service_id": 2,
+        "protocol_id": 2,
+        "protocol": null,
+        "port_number": 80
+      },
+      {
+        "id": 3,
+        "service_id": 3,
+        "protocol_id": 2,
+        "protocol": null,
+        "port_number": 443
+      },
+      {
+        "id": 4,
+        "service_id": 4,
+        "protocol_id": 1,
+        "protocol": null,
+        "port_number": -1
+      }
+    ],
+    "environments": [
+      {
+        "id": 1,
+        "template_id": 5,
+        "template": null,
+        "test_runner_script_id": 6,
+        "test_runner_script": null,
+        "git_repository_uri": "/data/clay_generated_conf",
+        "git_user_name": "clay",
+        "git_user_email": "clay@example.com",
+        "design_file_name": "design.json",
+        "template_file_name": "terraform.tf",
+        "test_case_directory_name": "testcases",
+        "server_config_directory_name": "server_config",
+        "device_config_directory_name": "device_config"
+      }
+    ],
+    "firewall_test_programs": [
+      {
+        "id": 1,
+        "name": "ssh TestProgram",
+        "service_id": 1,
+        "service": null,
+        "test_script_template_id": 7,
+        "test_script_template": null
+      },
+      {
+        "id": 2,
+        "name": "ping TestProgram",
+        "service_id": 4,
+        "service": null,
+        "test_script_template_id": 8,
+        "test_script_template": null
+      },
+      {
+        "id": 3,
+        "name": "http TestProgram",
+        "service_id": 2,
+        "service": null,
+        "test_script_template_id": 9,
+        "test_script_template": null
+      },
+      {
+        "id": 4,
+        "name": "https TestProgram",
+        "service_id": 3,
+        "service": null,
+        "test_script_template_id": 10,
+        "test_script_template": null
+      }
+    ],
+    "node_extra_attribute_fields": [
+      {
+        "id": 1,
+        "name": "virtual",
+        "node_extra_attribute_options": null,
+        "node_extra_attributes": null
+      },
+      {
+        "id": 2,
+        "name": "remark",
+        "node_extra_attribute_options": null,
+        "node_extra_attributes": null
+      },
+      {
+        "id": 3,
+        "name": "server_type",
+        "node_extra_attribute_options": null,
+        "node_extra_attributes": null
+      },
+      {
+        "id": 4,
+        "name": "device_initialization_config",
+        "node_extra_attribute_options": null,
+        "node_extra_attributes": null
+      },
+      {
+        "id": 5,
+        "name": "device_config",
+        "node_extra_attribute_options": null,
+        "node_extra_attributes": null
+      }
+    ],
+    "node_extra_attribute_options": [
+      {
+        "id": 1,
+        "node_extra_attribute_field_id": 3,
+        "node_extra_attribute_field": null,
+        "name": "inst",
+        "value_int": {
+          "Int64": 1,
+          "Valid": true
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "centos/7/lxc",
+          "Valid": true
+        }
+      },
+      {
+        "id": 2,
+        "node_extra_attribute_field_id": 3,
+        "node_extra_attribute_field": null,
+        "name": "tftp",
+        "value_int": {
+          "Int64": 2,
+          "Valid": true
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "tftp/lxc",
+          "Valid": true
+        }
+      },
+      {
+        "id": 3,
+        "node_extra_attribute_field_id": 3,
+        "node_extra_attribute_field": null,
+        "name": "provisioner",
+        "value_int": {
+          "Int64": 3,
+          "Valid": true
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "provisioner/lxc",
+          "Valid": true
+        }
+      },
+      {
+        "id": 4,
+        "node_extra_attribute_field_id": 3,
+        "node_extra_attribute_field": null,
+        "name": "telnethop",
+        "value_int": {
+          "Int64": 4,
+          "Valid": true
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "telnethop/lxc",
+          "Valid": true
+        }
+      }
+    ],
+    "node_extra_attributes": [
+      {
+        "id": 1,
+        "node_id": 1,
+        "node": null,
+        "node_extra_attribute_field_id": 1,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 2,
+        "node_id": 1,
+        "node": null,
+        "node_extra_attribute_field_id": 3,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 3,
+        "node_id": 1,
+        "node": null,
+        "node_extra_attribute_field_id": 2,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 4,
+        "node_id": 2,
+        "node": null,
+        "node_extra_attribute_field_id": 1,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": true,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 5,
+        "node_id": 2,
+        "node": null,
+        "node_extra_attribute_field_id": 3,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 6,
+        "node_id": 2,
+        "node": null,
+        "node_extra_attribute_field_id": 2,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 7,
+        "node_id": 3,
+        "node": null,
+        "node_extra_attribute_field_id": 1,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": true,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 8,
+        "node_id": 3,
+        "node": null,
+        "node_extra_attribute_field_id": 3,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 9,
+        "node_id": 3,
+        "node": null,
+        "node_extra_attribute_field_id": 2,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 10,
+        "node_id": 4,
+        "node": null,
+        "node_extra_attribute_field_id": 1,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": true,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 11,
+        "node_id": 4,
+        "node": null,
+        "node_extra_attribute_field_id": 3,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 1,
+          "Valid": true
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 12,
+        "node_id": 4,
+        "node": null,
+        "node_extra_attribute_field_id": 2,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 13,
+        "node_id": 5,
+        "node": null,
+        "node_extra_attribute_field_id": 1,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": true,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 14,
+        "node_id": 5,
+        "node": null,
+        "node_extra_attribute_field_id": 3,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 1,
+          "Valid": true
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 15,
+        "node_id": 5,
+        "node": null,
+        "node_extra_attribute_field_id": 2,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 16,
+        "node_id": 6,
+        "node": null,
+        "node_extra_attribute_field_id": 1,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": true,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 17,
+        "node_id": 6,
+        "node": null,
+        "node_extra_attribute_field_id": 3,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 1,
+          "Valid": true
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 18,
+        "node_id": 6,
+        "node": null,
+        "node_extra_attribute_field_id": 2,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 19,
+        "node_id": 7,
+        "node": null,
+        "node_extra_attribute_field_id": 1,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": true,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 20,
+        "node_id": 7,
+        "node": null,
+        "node_extra_attribute_field_id": 3,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 1,
+          "Valid": true
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 21,
+        "node_id": 7,
+        "node": null,
+        "node_extra_attribute_field_id": 2,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 22,
+        "node_id": 8,
+        "node": null,
+        "node_extra_attribute_field_id": 1,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": true,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 23,
+        "node_id": 8,
+        "node": null,
+        "node_extra_attribute_field_id": 3,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 24,
+        "node_id": 8,
+        "node": null,
+        "node_extra_attribute_field_id": 2,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 25,
+        "node_id": 9,
+        "node": null,
+        "node_extra_attribute_field_id": 1,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": true,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 26,
+        "node_id": 9,
+        "node": null,
+        "node_extra_attribute_field_id": 3,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 2,
+          "Valid": true
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 27,
+        "node_id": 9,
+        "node": null,
+        "node_extra_attribute_field_id": 2,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 28,
+        "node_id": 10,
+        "node": null,
+        "node_extra_attribute_field_id": 1,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": true,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 29,
+        "node_id": 10,
+        "node": null,
+        "node_extra_attribute_field_id": 3,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 30,
+        "node_id": 10,
+        "node": null,
+        "node_extra_attribute_field_id": 2,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 31,
+        "node_id": 11,
+        "node": null,
+        "node_extra_attribute_field_id": 1,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": true,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 32,
+        "node_id": 11,
+        "node": null,
+        "node_extra_attribute_field_id": 3,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 33,
+        "node_id": 11,
+        "node": null,
+        "node_extra_attribute_field_id": 2,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 34,
+        "node_id": 12,
+        "node": null,
+        "node_extra_attribute_field_id": 1,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": true,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 35,
+        "node_id": 12,
+        "node": null,
+        "node_extra_attribute_field_id": 3,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 4,
+          "Valid": true
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 36,
+        "node_id": 12,
+        "node": null,
+        "node_extra_attribute_field_id": 2,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 37,
+        "node_id": 13,
+        "node": null,
+        "node_extra_attribute_field_id": 1,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": true,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 38,
+        "node_id": 13,
+        "node": null,
+        "node_extra_attribute_field_id": 3,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 4,
+          "Valid": true
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 39,
+        "node_id": 13,
+        "node": null,
+        "node_extra_attribute_field_id": 2,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 40,
+        "node_id": 14,
+        "node": null,
+        "node_extra_attribute_field_id": 1,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": true,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 41,
+        "node_id": 14,
+        "node": null,
+        "node_extra_attribute_field_id": 3,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 3,
+          "Valid": true
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 42,
+        "node_id": 14,
+        "node": null,
+        "node_extra_attribute_field_id": 2,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 43,
+        "node_id": 15,
+        "node": null,
+        "node_extra_attribute_field_id": 1,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 44,
+        "node_id": 15,
+        "node": null,
+        "node_extra_attribute_field_id": 3,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 45,
+        "node_id": 15,
+        "node": null,
+        "node_extra_attribute_field_id": 2,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 46,
+        "node_id": 16,
+        "node": null,
+        "node_extra_attribute_field_id": 1,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": true,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 47,
+        "node_id": 16,
+        "node": null,
+        "node_extra_attribute_field_id": 3,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 48,
+        "node_id": 16,
+        "node": null,
+        "node_extra_attribute_field_id": 2,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 49,
+        "node_id": 1,
+        "node": null,
+        "node_extra_attribute_field_id": 4,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "commands=(\n    \"save software from tftp 192.168.1.10 ssg5ssg20.6.1.0r2.0 to flash\"\n    \"unset all | confirm: yes\"\n    \"reset     | confirm: no yes\"\n    \"exit      | confirm: yes\"\n)\n",
+          "Valid": true
+        }
+      },
+      {
+        "id": 50,
+        "node_id": 1,
+        "node": null,
+        "node_extra_attribute_field_id": 5,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "commands=(\n    \"unset interface bgroup0 port eth0/2\"\n    \"unset interface bgroup0 port eth0/3\"\n    \"unset interface bgroup0 port eth0/4\"\n    \"unset interface bgroup0 port eth0/6\"\n    \"set zone name Internet\"\n    \"set zone name segment1\"\n    \"set zone name segment2\"\n    \"set zone name segment-tftp\"\n    \"set interface eth0/0 zone segment1\"\n    \"set interface eth0/0 ip 10.0.0.1/24\"\n    \"set interface eth0/1 zone segment2\"\n    \"set interface eth0/1 ip 10.0.1.1/24\"\n    \"set interface eth0/6 zone Internet\"\n    \"set interface eth0/6 ip 192.168.200.1/24\"\n    \"set route 0.0.0.0/0 interface eth0/6 gateway 192.168.200.2\"\n    \"set policy from segment1 to Internet any any ANY nat src permit\"\n    \"exit | confirm: yes\"\n)\n\n#    \"unset interface bgroup0 ip\"\n#    \"unset interface bgroup0 port eth0/5\"\n#    \"set interface eth0/5 zone Trust\"\n#    \"set interface eth0/5 ip 192.168.1.1/24\"\n",
+          "Valid": true
+        }
+      },
+      {
+        "id": 57,
+        "node_id": 19,
+        "node": null,
+        "node_extra_attribute_field_id": 1,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 58,
+        "node_id": 19,
+        "node": null,
+        "node_extra_attribute_field_id": 3,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 59,
+        "node_id": 19,
+        "node": null,
+        "node_extra_attribute_field_id": 2,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 60,
+        "node_id": 20,
+        "node": null,
+        "node_extra_attribute_field_id": 1,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 61,
+        "node_id": 20,
+        "node": null,
+        "node_extra_attribute_field_id": 3,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 62,
+        "node_id": 20,
+        "node": null,
+        "node_extra_attribute_field_id": 2,
+        "node_extra_attribute_field": null,
+        "value_node_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_node_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      }
+    ],
+    "node_group_associations": [],
+    "node_groups": [],
+    "node_types": [
+      {
+        "id": 1,
+        "name": "L2Switch"
+      },
+      {
+        "id": 2,
+        "name": "L3Switch"
+      },
+      {
+        "id": 3,
+        "name": "Firewall"
+      },
+      {
+        "id": 4,
+        "name": "Router"
+      },
+      {
+        "id": 5,
+        "name": "LoadBalancer"
+      },
+      {
+        "id": 6,
+        "name": "Server"
+      },
+      {
+        "id": 7,
+        "name": "Network"
+      }
+    ],
+    "nodes": [
+      {
+        "id": 1,
+        "name": "fwall",
+        "node_type_id": 3,
+        "node_type": null,
+        "node_extra_attributes": null,
+        "ports": null,
+        "node_groups": null
+      },
+      {
+        "id": 2,
+        "name": "l2sw1",
+        "node_type_id": 1,
+        "node_type": null,
+        "node_extra_attributes": null,
+        "ports": null,
+        "node_groups": null
+      },
+      {
+        "id": 3,
+        "name": "l2sw2",
+        "node_type_id": 1,
+        "node_type": null,
+        "node_extra_attributes": null,
+        "ports": null,
+        "node_groups": null
+      },
+      {
+        "id": 4,
+        "name": "inst1",
+        "node_type_id": 6,
+        "node_type": null,
+        "node_extra_attributes": null,
+        "ports": null,
+        "node_groups": null
+      },
+      {
+        "id": 5,
+        "name": "inst2",
+        "node_type_id": 6,
+        "node_type": null,
+        "node_extra_attributes": null,
+        "ports": null,
+        "node_groups": null
+      },
+      {
+        "id": 6,
+        "name": "inst3",
+        "node_type_id": 6,
+        "node_type": null,
+        "node_extra_attributes": null,
+        "ports": null,
+        "node_groups": null
+      },
+      {
+        "id": 7,
+        "name": "inst4",
+        "node_type_id": 6,
+        "node_type": null,
+        "node_extra_attributes": null,
+        "ports": null,
+        "node_groups": null
+      },
+      {
+        "id": 8,
+        "name": "l2sw7",
+        "node_type_id": 1,
+        "node_type": null,
+        "node_extra_attributes": null,
+        "ports": null,
+        "node_groups": null
+      },
+      {
+        "id": 9,
+        "name": "tftp",
+        "node_type_id": 6,
+        "node_type": null,
+        "node_extra_attributes": null,
+        "ports": null,
+        "node_groups": null
+      },
+      {
+        "id": 10,
+        "name": "l2swk1",
+        "node_type_id": 1,
+        "node_type": null,
+        "node_extra_attributes": null,
+        "ports": null,
+        "node_groups": null
+      },
+      {
+        "id": 11,
+        "name": "l2swk2",
+        "node_type_id": 1,
+        "node_type": null,
+        "node_extra_attributes": null,
+        "ports": null,
+        "node_groups": null
+      },
+      {
+        "id": 12,
+        "name": "telnethop1",
+        "node_type_id": 6,
+        "node_type": null,
+        "node_extra_attributes": null,
+        "ports": null,
+        "node_groups": null
+      },
+      {
+        "id": 13,
+        "name": "telnethop2",
+        "node_type_id": 6,
+        "node_type": null,
+        "node_extra_attributes": null,
+        "ports": null,
+        "node_groups": null
+      },
+      {
+        "id": 14,
+        "name": "provisioner",
+        "node_type_id": 6,
+        "node_type": null,
+        "node_extra_attributes": null,
+        "ports": null,
+        "node_groups": null
+      },
+      {
+        "id": 15,
+        "name": "router1",
+        "node_type_id": 4,
+        "node_type": null,
+        "node_extra_attributes": null,
+        "ports": null,
+        "node_groups": null
+      },
+      {
+        "id": 16,
+        "name": "l2swr",
+        "node_type_id": 1,
+        "node_type": null,
+        "node_extra_attributes": null,
+        "ports": null,
+        "node_groups": null
+      },
+      {
+        "id": 19,
+        "name": "internet",
+        "node_type_id": 7,
+        "node_type": null,
+        "node_extra_attributes": null,
+        "ports": null,
+        "node_groups": null
+      },
+      {
+        "id": 20,
+        "name": "GooglePublicDNS",
+        "node_type_id": 6,
+        "node_type": null,
+        "node_extra_attributes": null,
+        "ports": null,
+        "node_groups": null
+      }
+    ],
+    "port_extra_attribute_fields": [
+      {
+        "id": 1,
+        "name": "gateway",
+        "port_extra_attribute_options": null,
+        "port_extra_attributes": null
+      },
+      {
+        "id": 2,
+        "name": "remark",
+        "port_extra_attribute_options": null,
+        "port_extra_attributes": null
+      },
+      {
+        "id": 3,
+        "name": "pass_through",
+        "port_extra_attribute_options": null,
+        "port_extra_attributes": null
+      }
+    ],
+    "port_extra_attribute_options": [],
+    "port_extra_attributes": [
+      {
+        "id": 1,
+        "port_id": 1,
+        "port": null,
+        "port_extra_attribute_field_id": 1,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 2,
+        "port_id": 1,
+        "port": null,
+        "port_extra_attribute_field_id": 2,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 3,
+        "port_id": 2,
+        "port": null,
+        "port_extra_attribute_field_id": 1,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 4,
+        "port_id": 2,
+        "port": null,
+        "port_extra_attribute_field_id": 2,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 5,
+        "port_id": 3,
+        "port": null,
+        "port_extra_attribute_field_id": 1,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 6,
+        "port_id": 3,
+        "port": null,
+        "port_extra_attribute_field_id": 2,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 7,
+        "port_id": 4,
+        "port": null,
+        "port_extra_attribute_field_id": 1,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 8,
+        "port_id": 4,
+        "port": null,
+        "port_extra_attribute_field_id": 2,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 9,
+        "port_id": 5,
+        "port": null,
+        "port_extra_attribute_field_id": 1,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 10,
+        "port_id": 5,
+        "port": null,
+        "port_extra_attribute_field_id": 2,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 11,
+        "port_id": 6,
+        "port": null,
+        "port_extra_attribute_field_id": 1,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 12,
+        "port_id": 6,
+        "port": null,
+        "port_extra_attribute_field_id": 2,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 13,
+        "port_id": 7,
+        "port": null,
+        "port_extra_attribute_field_id": 1,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 14,
+        "port_id": 7,
+        "port": null,
+        "port_extra_attribute_field_id": 2,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 15,
+        "port_id": 8,
+        "port": null,
+        "port_extra_attribute_field_id": 1,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 16,
+        "port_id": 8,
+        "port": null,
+        "port_extra_attribute_field_id": 2,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 17,
+        "port_id": 9,
+        "port": null,
+        "port_extra_attribute_field_id": 1,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 18,
+        "port_id": 9,
+        "port": null,
+        "port_extra_attribute_field_id": 2,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 19,
+        "port_id": 10,
+        "port": null,
+        "port_extra_attribute_field_id": 1,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 20,
+        "port_id": 10,
+        "port": null,
+        "port_extra_attribute_field_id": 2,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 21,
+        "port_id": 11,
+        "port": null,
+        "port_extra_attribute_field_id": 1,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 22,
+        "port_id": 11,
+        "port": null,
+        "port_extra_attribute_field_id": 2,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 23,
+        "port_id": 12,
+        "port": null,
+        "port_extra_attribute_field_id": 1,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 24,
+        "port_id": 12,
+        "port": null,
+        "port_extra_attribute_field_id": 2,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 25,
+        "port_id": 13,
+        "port": null,
+        "port_extra_attribute_field_id": 1,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 26,
+        "port_id": 13,
+        "port": null,
+        "port_extra_attribute_field_id": 2,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 27,
+        "port_id": 14,
+        "port": null,
+        "port_extra_attribute_field_id": 1,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "10.0.0.1",
+          "Valid": true
+        }
+      },
+      {
+        "id": 28,
+        "port_id": 14,
+        "port": null,
+        "port_extra_attribute_field_id": 2,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 29,
+        "port_id": 15,
+        "port": null,
+        "port_extra_attribute_field_id": 1,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "10.0.0.1",
+          "Valid": true
+        }
+      },
+      {
+        "id": 30,
+        "port_id": 15,
+        "port": null,
+        "port_extra_attribute_field_id": 2,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 31,
+        "port_id": 16,
+        "port": null,
+        "port_extra_attribute_field_id": 1,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "10.0.1.1",
+          "Valid": true
+        }
+      },
+      {
+        "id": 32,
+        "port_id": 16,
+        "port": null,
+        "port_extra_attribute_field_id": 2,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 33,
+        "port_id": 17,
+        "port": null,
+        "port_extra_attribute_field_id": 1,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "10.0.0.1",
+          "Valid": true
+        }
+      },
+      {
+        "id": 34,
+        "port_id": 17,
+        "port": null,
+        "port_extra_attribute_field_id": 2,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 35,
+        "port_id": 18,
+        "port": null,
+        "port_extra_attribute_field_id": 1,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 36,
+        "port_id": 18,
+        "port": null,
+        "port_extra_attribute_field_id": 2,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 37,
+        "port_id": 19,
+        "port": null,
+        "port_extra_attribute_field_id": 1,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 38,
+        "port_id": 19,
+        "port": null,
+        "port_extra_attribute_field_id": 2,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 39,
+        "port_id": 20,
+        "port": null,
+        "port_extra_attribute_field_id": 1,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 40,
+        "port_id": 20,
+        "port": null,
+        "port_extra_attribute_field_id": 2,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 41,
+        "port_id": 21,
+        "port": null,
+        "port_extra_attribute_field_id": 1,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "192.168.1.1",
+          "Valid": true
+        }
+      },
+      {
+        "id": 42,
+        "port_id": 21,
+        "port": null,
+        "port_extra_attribute_field_id": 2,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 43,
+        "port_id": 22,
+        "port": null,
+        "port_extra_attribute_field_id": 1,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 44,
+        "port_id": 22,
+        "port": null,
+        "port_extra_attribute_field_id": 2,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 45,
+        "port_id": 23,
+        "port": null,
+        "port_extra_attribute_field_id": 1,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 46,
+        "port_id": 23,
+        "port": null,
+        "port_extra_attribute_field_id": 2,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 47,
+        "port_id": 24,
+        "port": null,
+        "port_extra_attribute_field_id": 1,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 48,
+        "port_id": 24,
+        "port": null,
+        "port_extra_attribute_field_id": 2,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 49,
+        "port_id": 25,
+        "port": null,
+        "port_extra_attribute_field_id": 1,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 50,
+        "port_id": 25,
+        "port": null,
+        "port_extra_attribute_field_id": 2,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 51,
+        "port_id": 26,
+        "port": null,
+        "port_extra_attribute_field_id": 1,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "192.168.1.1",
+          "Valid": true
+        }
+      },
+      {
+        "id": 52,
+        "port_id": 26,
+        "port": null,
+        "port_extra_attribute_field_id": 2,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 53,
+        "port_id": 27,
+        "port": null,
+        "port_extra_attribute_field_id": 1,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 54,
+        "port_id": 27,
+        "port": null,
+        "port_extra_attribute_field_id": 2,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 55,
+        "port_id": 28,
+        "port": null,
+        "port_extra_attribute_field_id": 1,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "192.168.2.1",
+          "Valid": true
+        }
+      },
+      {
+        "id": 56,
+        "port_id": 28,
+        "port": null,
+        "port_extra_attribute_field_id": 2,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 57,
+        "port_id": 29,
+        "port": null,
+        "port_extra_attribute_field_id": 1,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 58,
+        "port_id": 29,
+        "port": null,
+        "port_extra_attribute_field_id": 2,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 59,
+        "port_id": 30,
+        "port": null,
+        "port_extra_attribute_field_id": 1,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "192.168.4.1",
+          "Valid": true
+        }
+      },
+      {
+        "id": 60,
+        "port_id": 30,
+        "port": null,
+        "port_extra_attribute_field_id": 2,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 61,
+        "port_id": 31,
+        "port": null,
+        "port_extra_attribute_field_id": 1,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 62,
+        "port_id": 31,
+        "port": null,
+        "port_extra_attribute_field_id": 2,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 63,
+        "port_id": 32,
+        "port": null,
+        "port_extra_attribute_field_id": 1,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 64,
+        "port_id": 32,
+        "port": null,
+        "port_extra_attribute_field_id": 2,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 65,
+        "port_id": 33,
+        "port": null,
+        "port_extra_attribute_field_id": 1,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 66,
+        "port_id": 33,
+        "port": null,
+        "port_extra_attribute_field_id": 2,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 75,
+        "port_id": 38,
+        "port": null,
+        "port_extra_attribute_field_id": 1,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 76,
+        "port_id": 38,
+        "port": null,
+        "port_extra_attribute_field_id": 2,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 77,
+        "port_id": 39,
+        "port": null,
+        "port_extra_attribute_field_id": 1,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 78,
+        "port_id": 39,
+        "port": null,
+        "port_extra_attribute_field_id": 2,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 79,
+        "port_id": 40,
+        "port": null,
+        "port_extra_attribute_field_id": 1,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 80,
+        "port_id": 40,
+        "port": null,
+        "port_extra_attribute_field_id": 2,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 81,
+        "port_id": 41,
+        "port": null,
+        "port_extra_attribute_field_id": 1,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 82,
+        "port_id": 41,
+        "port": null,
+        "port_extra_attribute_field_id": 2,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 83,
+        "port_id": 1,
+        "port": null,
+        "port_extra_attribute_field_id": 3,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 84,
+        "port_id": 2,
+        "port": null,
+        "port_extra_attribute_field_id": 3,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 85,
+        "port_id": 3,
+        "port": null,
+        "port_extra_attribute_field_id": 3,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 86,
+        "port_id": 4,
+        "port": null,
+        "port_extra_attribute_field_id": 3,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 87,
+        "port_id": 5,
+        "port": null,
+        "port_extra_attribute_field_id": 3,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 88,
+        "port_id": 6,
+        "port": null,
+        "port_extra_attribute_field_id": 3,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 89,
+        "port_id": 7,
+        "port": null,
+        "port_extra_attribute_field_id": 3,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 90,
+        "port_id": 31,
+        "port": null,
+        "port_extra_attribute_field_id": 3,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 91,
+        "port_id": 40,
+        "port": null,
+        "port_extra_attribute_field_id": 3,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": true,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 92,
+        "port_id": 38,
+        "port": null,
+        "port_extra_attribute_field_id": 3,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": true,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 93,
+        "port_id": 39,
+        "port": null,
+        "port_extra_attribute_field_id": 3,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": true,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 94,
+        "port_id": 8,
+        "port": null,
+        "port_extra_attribute_field_id": 3,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 95,
+        "port_id": 9,
+        "port": null,
+        "port_extra_attribute_field_id": 3,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 96,
+        "port_id": 13,
+        "port": null,
+        "port_extra_attribute_field_id": 3,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 97,
+        "port_id": 41,
+        "port": null,
+        "port_extra_attribute_field_id": 3,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": true,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 98,
+        "port_id": 32,
+        "port": null,
+        "port_extra_attribute_field_id": 3,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 99,
+        "port_id": 33,
+        "port": null,
+        "port_extra_attribute_field_id": 3,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 100,
+        "port_id": 22,
+        "port": null,
+        "port_extra_attribute_field_id": 3,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 101,
+        "port_id": 23,
+        "port": null,
+        "port_extra_attribute_field_id": 3,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 102,
+        "port_id": 10,
+        "port": null,
+        "port_extra_attribute_field_id": 3,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 103,
+        "port_id": 11,
+        "port": null,
+        "port_extra_attribute_field_id": 3,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 104,
+        "port_id": 12,
+        "port": null,
+        "port_extra_attribute_field_id": 3,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 105,
+        "port_id": 14,
+        "port": null,
+        "port_extra_attribute_field_id": 3,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 106,
+        "port_id": 15,
+        "port": null,
+        "port_extra_attribute_field_id": 3,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 107,
+        "port_id": 16,
+        "port": null,
+        "port_extra_attribute_field_id": 3,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 108,
+        "port_id": 17,
+        "port": null,
+        "port_extra_attribute_field_id": 3,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 109,
+        "port_id": 18,
+        "port": null,
+        "port_extra_attribute_field_id": 3,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 110,
+        "port_id": 19,
+        "port": null,
+        "port_extra_attribute_field_id": 3,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 111,
+        "port_id": 20,
+        "port": null,
+        "port_extra_attribute_field_id": 3,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 112,
+        "port_id": 21,
+        "port": null,
+        "port_extra_attribute_field_id": 3,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 113,
+        "port_id": 24,
+        "port": null,
+        "port_extra_attribute_field_id": 3,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 114,
+        "port_id": 25,
+        "port": null,
+        "port_extra_attribute_field_id": 3,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 115,
+        "port_id": 26,
+        "port": null,
+        "port_extra_attribute_field_id": 3,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 116,
+        "port_id": 27,
+        "port": null,
+        "port_extra_attribute_field_id": 3,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 117,
+        "port_id": 28,
+        "port": null,
+        "port_extra_attribute_field_id": 3,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 118,
+        "port_id": 29,
+        "port": null,
+        "port_extra_attribute_field_id": 3,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 119,
+        "port_id": 30,
+        "port": null,
+        "port_extra_attribute_field_id": 3,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      }
+    ],
+    "ports": [
+      {
+        "id": 1,
+        "node_id": 1,
+        "node": null,
+        "layer": 3,
+        "number": 1,
+        "name": "eth1",
+        "destination_port_id": {
+          "Int64": 8,
+          "Valid": true
+        },
+        "destination_port": null,
+        "mac_address": {
+          "String": "84:b5:9c:56:fa:c0",
+          "Valid": true
+        },
+        "ipv4_address": {
+          "String": "10.0.0.1",
+          "Valid": true
+        },
+        "ipv4_prefix": {
+          "Int64": 24,
+          "Valid": true
+        },
+        "port_extra_attributes": null
+      },
+      {
+        "id": 2,
+        "node_id": 1,
+        "node": null,
+        "layer": 3,
+        "number": 2,
+        "name": "eth2",
+        "destination_port_id": {
+          "Int64": 10,
+          "Valid": true
+        },
+        "destination_port": null,
+        "mac_address": {
+          "String": "84:b5:9c:56:fa:c5",
+          "Valid": true
+        },
+        "ipv4_address": {
+          "String": "10.0.1.1",
+          "Valid": true
+        },
+        "ipv4_prefix": {
+          "Int64": 24,
+          "Valid": true
+        },
+        "port_extra_attributes": null
+      },
+      {
+        "id": 3,
+        "node_id": 1,
+        "node": null,
+        "layer": 1,
+        "number": 3,
+        "name": "eth3",
+        "destination_port_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "destination_port": null,
+        "mac_address": {
+          "String": "",
+          "Valid": false
+        },
+        "ipv4_address": {
+          "String": "",
+          "Valid": false
+        },
+        "ipv4_prefix": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "port_extra_attributes": null
+      },
+      {
+        "id": 4,
+        "node_id": 1,
+        "node": null,
+        "layer": 1,
+        "number": 4,
+        "name": "eth4",
+        "destination_port_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "destination_port": null,
+        "mac_address": {
+          "String": "",
+          "Valid": false
+        },
+        "ipv4_address": {
+          "String": "",
+          "Valid": false
+        },
+        "ipv4_prefix": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "port_extra_attributes": null
+      },
+      {
+        "id": 5,
+        "node_id": 1,
+        "node": null,
+        "layer": 1,
+        "number": 5,
+        "name": "eth5",
+        "destination_port_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "destination_port": null,
+        "mac_address": {
+          "String": "",
+          "Valid": false
+        },
+        "ipv4_address": {
+          "String": "",
+          "Valid": false
+        },
+        "ipv4_prefix": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "port_extra_attributes": null
+      },
+      {
+        "id": 6,
+        "node_id": 1,
+        "node": null,
+        "layer": 3,
+        "number": 6,
+        "name": "eth6",
+        "destination_port_id": {
+          "Int64": 18,
+          "Valid": true
+        },
+        "destination_port": null,
+        "mac_address": {
+          "String": "84:b5:9c:56:fa:cb",
+          "Valid": true
+        },
+        "ipv4_address": {
+          "String": "192.168.1.1",
+          "Valid": true
+        },
+        "ipv4_prefix": {
+          "Int64": 24,
+          "Valid": true
+        },
+        "port_extra_attributes": null
+      },
+      {
+        "id": 7,
+        "node_id": 1,
+        "node": null,
+        "layer": 3,
+        "number": 7,
+        "name": "eth7",
+        "destination_port_id": {
+          "Int64": 32,
+          "Valid": true
+        },
+        "destination_port": null,
+        "mac_address": {
+          "String": "84:b5:9c:56:fa:ca",
+          "Valid": true
+        },
+        "ipv4_address": {
+          "String": "192.168.200.1",
+          "Valid": true
+        },
+        "ipv4_prefix": {
+          "Int64": 24,
+          "Valid": true
+        },
+        "port_extra_attributes": null
+      },
+      {
+        "id": 8,
+        "node_id": 2,
+        "node": null,
+        "layer": 1,
+        "number": 1,
+        "name": "p0",
+        "destination_port_id": {
+          "Int64": 1,
+          "Valid": true
+        },
+        "destination_port": null,
+        "mac_address": {
+          "String": "",
+          "Valid": false
+        },
+        "ipv4_address": {
+          "String": "",
+          "Valid": false
+        },
+        "ipv4_prefix": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "port_extra_attributes": null
+      },
+      {
+        "id": 9,
+        "node_id": 2,
+        "node": null,
+        "layer": 1,
+        "number": 2,
+        "name": "p1",
+        "destination_port_id": {
+          "Int64": 14,
+          "Valid": true
+        },
+        "destination_port": null,
+        "mac_address": {
+          "String": "",
+          "Valid": false
+        },
+        "ipv4_address": {
+          "String": "",
+          "Valid": false
+        },
+        "ipv4_prefix": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "port_extra_attributes": null
+      },
+      {
+        "id": 10,
+        "node_id": 3,
+        "node": null,
+        "layer": 1,
+        "number": 1,
+        "name": "p0",
+        "destination_port_id": {
+          "Int64": 2,
+          "Valid": true
+        },
+        "destination_port": null,
+        "mac_address": {
+          "String": "",
+          "Valid": false
+        },
+        "ipv4_address": {
+          "String": "",
+          "Valid": false
+        },
+        "ipv4_prefix": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "port_extra_attributes": null
+      },
+      {
+        "id": 11,
+        "node_id": 3,
+        "node": null,
+        "layer": 1,
+        "number": 2,
+        "name": "p1",
+        "destination_port_id": {
+          "Int64": 16,
+          "Valid": true
+        },
+        "destination_port": null,
+        "mac_address": {
+          "String": "",
+          "Valid": false
+        },
+        "ipv4_address": {
+          "String": "",
+          "Valid": false
+        },
+        "ipv4_prefix": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "port_extra_attributes": null
+      },
+      {
+        "id": 12,
+        "node_id": 3,
+        "node": null,
+        "layer": 1,
+        "number": 3,
+        "name": "p2",
+        "destination_port_id": {
+          "Int64": 17,
+          "Valid": true
+        },
+        "destination_port": null,
+        "mac_address": {
+          "String": "",
+          "Valid": false
+        },
+        "ipv4_address": {
+          "String": "",
+          "Valid": false
+        },
+        "ipv4_prefix": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "port_extra_attributes": null
+      },
+      {
+        "id": 13,
+        "node_id": 2,
+        "node": null,
+        "layer": 1,
+        "number": 3,
+        "name": "p2",
+        "destination_port_id": {
+          "Int64": 15,
+          "Valid": true
+        },
+        "destination_port": null,
+        "mac_address": {
+          "String": "",
+          "Valid": false
+        },
+        "ipv4_address": {
+          "String": "",
+          "Valid": false
+        },
+        "ipv4_prefix": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "port_extra_attributes": null
+      },
+      {
+        "id": 14,
+        "node_id": 4,
+        "node": null,
+        "layer": 3,
+        "number": 1,
+        "name": "eth0",
+        "destination_port_id": {
+          "Int64": 9,
+          "Valid": true
+        },
+        "destination_port": null,
+        "mac_address": {
+          "String": "10:54:ff:00:00:01",
+          "Valid": true
+        },
+        "ipv4_address": {
+          "String": "10.0.0.10",
+          "Valid": true
+        },
+        "ipv4_prefix": {
+          "Int64": 24,
+          "Valid": true
+        },
+        "port_extra_attributes": null
+      },
+      {
+        "id": 15,
+        "node_id": 5,
+        "node": null,
+        "layer": 3,
+        "number": 1,
+        "name": "eth0",
+        "destination_port_id": {
+          "Int64": 13,
+          "Valid": true
+        },
+        "destination_port": null,
+        "mac_address": {
+          "String": "10:54:ff:00:00:02",
+          "Valid": true
+        },
+        "ipv4_address": {
+          "String": "10.0.0.11",
+          "Valid": true
+        },
+        "ipv4_prefix": {
+          "Int64": 24,
+          "Valid": true
+        },
+        "port_extra_attributes": null
+      },
+      {
+        "id": 16,
+        "node_id": 6,
+        "node": null,
+        "layer": 3,
+        "number": 1,
+        "name": "eth0",
+        "destination_port_id": {
+          "Int64": 11,
+          "Valid": true
+        },
+        "destination_port": null,
+        "mac_address": {
+          "String": "10:54:ff:00:00:03",
+          "Valid": true
+        },
+        "ipv4_address": {
+          "String": "10.0.1.10",
+          "Valid": true
+        },
+        "ipv4_prefix": {
+          "Int64": 24,
+          "Valid": true
+        },
+        "port_extra_attributes": null
+      },
+      {
+        "id": 17,
+        "node_id": 7,
+        "node": null,
+        "layer": 3,
+        "number": 1,
+        "name": "eth0",
+        "destination_port_id": {
+          "Int64": 12,
+          "Valid": true
+        },
+        "destination_port": null,
+        "mac_address": {
+          "String": "10:54:ff:00:00:04",
+          "Valid": true
+        },
+        "ipv4_address": {
+          "String": "10.0.1.11",
+          "Valid": true
+        },
+        "ipv4_prefix": {
+          "Int64": 24,
+          "Valid": true
+        },
+        "port_extra_attributes": null
+      },
+      {
+        "id": 18,
+        "node_id": 8,
+        "node": null,
+        "layer": 1,
+        "number": 1,
+        "name": "p0",
+        "destination_port_id": {
+          "Int64": 6,
+          "Valid": true
+        },
+        "destination_port": null,
+        "mac_address": {
+          "String": "",
+          "Valid": false
+        },
+        "ipv4_address": {
+          "String": "",
+          "Valid": false
+        },
+        "ipv4_prefix": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "port_extra_attributes": null
+      },
+      {
+        "id": 19,
+        "node_id": 8,
+        "node": null,
+        "layer": 1,
+        "number": 2,
+        "name": "p1",
+        "destination_port_id": {
+          "Int64": 26,
+          "Valid": true
+        },
+        "destination_port": null,
+        "mac_address": {
+          "String": "",
+          "Valid": false
+        },
+        "ipv4_address": {
+          "String": "",
+          "Valid": false
+        },
+        "ipv4_prefix": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "port_extra_attributes": null
+      },
+      {
+        "id": 20,
+        "node_id": 8,
+        "node": null,
+        "layer": 1,
+        "number": 3,
+        "name": "p2",
+        "destination_port_id": {
+          "Int64": 21,
+          "Valid": true
+        },
+        "destination_port": null,
+        "mac_address": {
+          "String": "",
+          "Valid": false
+        },
+        "ipv4_address": {
+          "String": "",
+          "Valid": false
+        },
+        "ipv4_prefix": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "port_extra_attributes": null
+      },
+      {
+        "id": 21,
+        "node_id": 9,
+        "node": null,
+        "layer": 3,
+        "number": 1,
+        "name": "eth0",
+        "destination_port_id": {
+          "Int64": 20,
+          "Valid": true
+        },
+        "destination_port": null,
+        "mac_address": {
+          "String": "10:54:ff:00:00:10",
+          "Valid": true
+        },
+        "ipv4_address": {
+          "String": "192.168.1.10",
+          "Valid": true
+        },
+        "ipv4_prefix": {
+          "Int64": 24,
+          "Valid": true
+        },
+        "port_extra_attributes": null
+      },
+      {
+        "id": 22,
+        "node_id": 10,
+        "node": null,
+        "layer": 1,
+        "number": 1,
+        "name": "p0",
+        "destination_port_id": {
+          "Int64": 27,
+          "Valid": true
+        },
+        "destination_port": null,
+        "mac_address": {
+          "String": "",
+          "Valid": false
+        },
+        "ipv4_address": {
+          "String": "",
+          "Valid": false
+        },
+        "ipv4_prefix": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "port_extra_attributes": null
+      },
+      {
+        "id": 23,
+        "node_id": 10,
+        "node": null,
+        "layer": 1,
+        "number": 2,
+        "name": "p1",
+        "destination_port_id": {
+          "Int64": 28,
+          "Valid": true
+        },
+        "destination_port": null,
+        "mac_address": {
+          "String": "",
+          "Valid": false
+        },
+        "ipv4_address": {
+          "String": "",
+          "Valid": false
+        },
+        "ipv4_prefix": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "port_extra_attributes": null
+      },
+      {
+        "id": 24,
+        "node_id": 11,
+        "node": null,
+        "layer": 1,
+        "number": 1,
+        "name": "p0",
+        "destination_port_id": {
+          "Int64": 29,
+          "Valid": true
+        },
+        "destination_port": null,
+        "mac_address": {
+          "String": "",
+          "Valid": false
+        },
+        "ipv4_address": {
+          "String": "",
+          "Valid": false
+        },
+        "ipv4_prefix": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "port_extra_attributes": null
+      },
+      {
+        "id": 25,
+        "node_id": 11,
+        "node": null,
+        "layer": 1,
+        "number": 2,
+        "name": "p1",
+        "destination_port_id": {
+          "Int64": 30,
+          "Valid": true
+        },
+        "destination_port": null,
+        "mac_address": {
+          "String": "",
+          "Valid": false
+        },
+        "ipv4_address": {
+          "String": "",
+          "Valid": false
+        },
+        "ipv4_prefix": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "port_extra_attributes": null
+      },
+      {
+        "id": 26,
+        "node_id": 12,
+        "node": null,
+        "layer": 3,
+        "number": 1,
+        "name": "tftptap",
+        "destination_port_id": {
+          "Int64": 19,
+          "Valid": true
+        },
+        "destination_port": null,
+        "mac_address": {
+          "String": "10:54:ff:aa:00:05",
+          "Valid": true
+        },
+        "ipv4_address": {
+          "String": "192.168.1.2",
+          "Valid": true
+        },
+        "ipv4_prefix": {
+          "Int64": 24,
+          "Valid": true
+        },
+        "port_extra_attributes": null
+      },
+      {
+        "id": 27,
+        "node_id": 12,
+        "node": null,
+        "layer": 3,
+        "number": 2,
+        "name": "hoptap1",
+        "destination_port_id": {
+          "Int64": 22,
+          "Valid": true
+        },
+        "destination_port": null,
+        "mac_address": {
+          "String": "10:54:ff:aa:00:04",
+          "Valid": true
+        },
+        "ipv4_address": {
+          "String": "192.168.2.1",
+          "Valid": true
+        },
+        "ipv4_prefix": {
+          "Int64": 24,
+          "Valid": true
+        },
+        "port_extra_attributes": null
+      },
+      {
+        "id": 28,
+        "node_id": 13,
+        "node": null,
+        "layer": 3,
+        "number": 1,
+        "name": "hoptap2",
+        "destination_port_id": {
+          "Int64": 23,
+          "Valid": true
+        },
+        "destination_port": null,
+        "mac_address": {
+          "String": "10:54:ff:aa:00:03",
+          "Valid": true
+        },
+        "ipv4_address": {
+          "String": "192.168.2.2",
+          "Valid": true
+        },
+        "ipv4_prefix": {
+          "Int64": 24,
+          "Valid": true
+        },
+        "port_extra_attributes": null
+      },
+      {
+        "id": 29,
+        "node_id": 13,
+        "node": null,
+        "layer": 3,
+        "number": 2,
+        "name": "provtap",
+        "destination_port_id": {
+          "Int64": 24,
+          "Valid": true
+        },
+        "destination_port": null,
+        "mac_address": {
+          "String": "10:54:ff:aa:00:02",
+          "Valid": true
+        },
+        "ipv4_address": {
+          "String": "192.168.4.1",
+          "Valid": true
+        },
+        "ipv4_prefix": {
+          "Int64": 24,
+          "Valid": true
+        },
+        "port_extra_attributes": null
+      },
+      {
+        "id": 30,
+        "node_id": 14,
+        "node": null,
+        "layer": 3,
+        "number": 1,
+        "name": "eth0",
+        "destination_port_id": {
+          "Int64": 25,
+          "Valid": true
+        },
+        "destination_port": null,
+        "mac_address": {
+          "String": "10:54:ff:aa:00:01",
+          "Valid": true
+        },
+        "ipv4_address": {
+          "String": "192.168.4.2",
+          "Valid": true
+        },
+        "ipv4_prefix": {
+          "Int64": 24,
+          "Valid": true
+        },
+        "port_extra_attributes": null
+      },
+      {
+        "id": 31,
+        "node_id": 15,
+        "node": null,
+        "layer": 3,
+        "number": 1,
+        "name": "eth8",
+        "destination_port_id": {
+          "Int64": 33,
+          "Valid": true
+        },
+        "destination_port": null,
+        "mac_address": {
+          "String": "52:56:01:00:01:aa",
+          "Valid": true
+        },
+        "ipv4_address": {
+          "String": "192.168.200.2",
+          "Valid": true
+        },
+        "ipv4_prefix": {
+          "Int64": 24,
+          "Valid": true
+        },
+        "port_extra_attributes": null
+      },
+      {
+        "id": 32,
+        "node_id": 16,
+        "node": null,
+        "layer": 1,
+        "number": 1,
+        "name": "p0",
+        "destination_port_id": {
+          "Int64": 7,
+          "Valid": true
+        },
+        "destination_port": null,
+        "mac_address": {
+          "String": "",
+          "Valid": false
+        },
+        "ipv4_address": {
+          "String": "",
+          "Valid": false
+        },
+        "ipv4_prefix": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "port_extra_attributes": null
+      },
+      {
+        "id": 33,
+        "node_id": 16,
+        "node": null,
+        "layer": 1,
+        "number": 2,
+        "name": "p1",
+        "destination_port_id": {
+          "Int64": 31,
+          "Valid": true
+        },
+        "destination_port": null,
+        "mac_address": {
+          "String": "",
+          "Valid": false
+        },
+        "ipv4_address": {
+          "String": "",
+          "Valid": false
+        },
+        "ipv4_prefix": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "port_extra_attributes": null
+      },
+      {
+        "id": 38,
+        "node_id": 19,
+        "node": null,
+        "layer": 3,
+        "number": 1,
+        "name": "p0",
+        "destination_port_id": {
+          "Int64": 40,
+          "Valid": true
+        },
+        "destination_port": null,
+        "mac_address": {
+          "String": "10:54:ff:99:00:02",
+          "Valid": true
+        },
+        "ipv4_address": {
+          "String": "203.0.113.1",
+          "Valid": true
+        },
+        "ipv4_prefix": {
+          "Int64": 24,
+          "Valid": true
+        },
+        "port_extra_attributes": null
+      },
+      {
+        "id": 39,
+        "node_id": 19,
+        "node": null,
+        "layer": 3,
+        "number": 2,
+        "name": "p1",
+        "destination_port_id": {
+          "Int64": 41,
+          "Valid": true
+        },
+        "destination_port": null,
+        "mac_address": {
+          "String": "10:54:ff:99:00:03",
+          "Valid": true
+        },
+        "ipv4_address": {
+          "String": "8.0.0.1",
+          "Valid": true
+        },
+        "ipv4_prefix": {
+          "Int64": 8,
+          "Valid": true
+        },
+        "port_extra_attributes": null
+      },
+      {
+        "id": 40,
+        "node_id": 15,
+        "node": null,
+        "layer": 3,
+        "number": 2,
+        "name": "eth9",
+        "destination_port_id": {
+          "Int64": 38,
+          "Valid": true
+        },
+        "destination_port": null,
+        "mac_address": {
+          "String": "10:54:ff:99:00:01",
+          "Valid": true
+        },
+        "ipv4_address": {
+          "String": "203.0.113.2",
+          "Valid": true
+        },
+        "ipv4_prefix": {
+          "Int64": 24,
+          "Valid": true
+        },
+        "port_extra_attributes": null
+      },
+      {
+        "id": 41,
+        "node_id": 20,
+        "node": null,
+        "layer": 3,
+        "number": 1,
+        "name": "eth0",
+        "destination_port_id": {
+          "Int64": 39,
+          "Valid": true
+        },
+        "destination_port": null,
+        "mac_address": {
+          "String": "10:54:ff:99:00:04",
+          "Valid": true
+        },
+        "ipv4_address": {
+          "String": "8.8.8.8",
+          "Valid": true
+        },
+        "ipv4_prefix": {
+          "Int64": 8,
+          "Valid": true
+        },
+        "port_extra_attributes": null
+      }
+    ],
+    "protocols": [
+      {
+        "id": 1,
+        "name": "icmp"
+      },
+      {
+        "id": 2,
+        "name": "tcp"
+      },
+      {
+        "id": 3,
+        "name": "udp"
+      }
+    ],
+    "requirements": [
+      {
+        "id": 9,
+        "source_port_id": {
+          "Int64": 14,
+          "Valid": true
+        },
+        "source_port": null,
+        "destination_port_id": {
+          "Int64": 15,
+          "Valid": true
+        },
+        "destination_port": null,
+        "service_id": 4,
+        "service": null,
+        "access": true
+      },
+      {
+        "id": 10,
+        "source_port_id": {
+          "Int64": 14,
+          "Valid": true
+        },
+        "source_port": null,
+        "destination_port_id": {
+          "Int64": 1,
+          "Valid": true
+        },
+        "destination_port": null,
+        "service_id": 4,
+        "service": null,
+        "access": true
+      },
+      {
+        "id": 11,
+        "source_port_id": {
+          "Int64": 14,
+          "Valid": true
+        },
+        "source_port": null,
+        "destination_port_id": {
+          "Int64": 16,
+          "Valid": true
+        },
+        "destination_port": null,
+        "service_id": 4,
+        "service": null,
+        "access": false
+      },
+      {
+        "id": 12,
+        "source_port_id": {
+          "Int64": 16,
+          "Valid": true
+        },
+        "source_port": null,
+        "destination_port_id": {
+          "Int64": 17,
+          "Valid": true
+        },
+        "destination_port": null,
+        "service_id": 4,
+        "service": null,
+        "access": true
+      },
+      {
+        "id": 13,
+        "source_port_id": {
+          "Int64": 16,
+          "Valid": true
+        },
+        "source_port": null,
+        "destination_port_id": {
+          "Int64": 14,
+          "Valid": true
+        },
+        "destination_port": null,
+        "service_id": 4,
+        "service": null,
+        "access": false
+      },
+      {
+        "id": 14,
+        "source_port_id": {
+          "Int64": 14,
+          "Valid": true
+        },
+        "source_port": null,
+        "destination_port_id": {
+          "Int64": 41,
+          "Valid": true
+        },
+        "destination_port": null,
+        "service_id": 4,
+        "service": null,
+        "access": true
+      },
+      {
+        "id": 15,
+        "source_port_id": {
+          "Int64": 16,
+          "Valid": true
+        },
+        "source_port": null,
+        "destination_port_id": {
+          "Int64": 41,
+          "Valid": true
+        },
+        "destination_port": null,
+        "service_id": 4,
+        "service": null,
+        "access": false
+      }
+    ],
+    "services": [
+      {
+        "id": 1,
+        "name": "ssh",
+        "connections": null,
+        "firewall_test_program": null
+      },
+      {
+        "id": 2,
+        "name": "http",
+        "connections": null,
+        "firewall_test_program": null
+      },
+      {
+        "id": 3,
+        "name": "https",
+        "connections": null,
+        "firewall_test_program": null
+      },
+      {
+        "id": 4,
+        "name": "ping",
+        "connections": null,
+        "firewall_test_program": null
+      }
+    ],
+    "template_persistent_parameters": [],
+    "templates": [
+      {
+        "id": 1,
+        "name": "inst_initial_server_script",
+        "template_content": "#!/bin/bash\n{{- range $index, $port := .Node.Ports}}\n{{- $pam := portattributemap $port}}\n{{- $gwa := get $pam \"gateway\" }}\n{{- $gw := index $gwa 0 }}\nip addr add {{$port.Ipv4Address.String}}/{{$port.Ipv4Prefix.Int64}} dev {{$port.Name}}\n{{if eq $index 0}}ip route add default via {{$gw.ValueString.String}}{{end}}\n{{end}}",
+        "template_persistent_parameters": null
+      },
+      {
+        "id": 2,
+        "name": "tftp_initial_server_script",
+        "template_content": "#!/bin/bash\n{{- range $index, $port := .Node.Ports}}\n{{- $pam := portattributemap $port}}\n{{- $gwa := get $pam \"gateway\" }}\n{{- $gw := index $gwa 0 }}\nip addr add {{$port.Ipv4Address.String}}/{{$port.Ipv4Prefix.Int64}} dev {{$port.Name}}\n{{if eq $index 0}}ip route add default via {{$gw.ValueString.String}}{{end}}\n{{end}}",
+        "template_persistent_parameters": null
+      },
+      {
+        "id": 3,
+        "name": "provisioner_initial_server_script",
+        "template_content": "#!/bin/bash\n{{- range $index, $port := .Node.Ports}}\n{{- $pam := portattributemap $port}}\n{{- $gwa := get $pam \"gateway\" }}\n{{- $gw := index $gwa 0 }}\nip addr add {{$port.Ipv4Address.String}}/{{$port.Ipv4Prefix.Int64}} dev {{$port.Name}}\n{{if eq $index 0}}ip route add default via {{$gw.ValueString.String}}{{end}}\n{{end}}",
+        "template_persistent_parameters": null
+      },
+      {
+        "id": 4,
+        "name": "telnethop_initial_server_script",
+        "template_content": "#!/bin/bash\n{{- range $index, $port := .Node.Ports}}\n{{- $pam := portattributemap $port}}\n{{- $gwa := get $pam \"gateway\" }}\n{{- $gw := index $gwa 0 }}\nip addr add {{$port.Ipv4Address.String}}/{{$port.Ipv4Prefix.Int64}} dev {{$port.Name}}\n{{if eq $index 0}}ip route add default via {{$gw.ValueString.String}}{{end}}\n{{end}}",
+        "template_persistent_parameters": null
+      },
+      {
+        "id": 5,
+        "name": "environment_template",
+        "template_content": "{{- $segments := multi .ModelStore \"segments\" \"\" -}}\n{{- $nodes := multi .ModelStore \"nodes\" \"preloads=Ports,NodeExtraAttributes,NodeExtraAttributes.NodeExtraAttributeField,NodeExtraAttributes.ValueNodeExtraAttributeOption\" -}}\n{{- $nodeMap := hash $nodes \"ID\" -}}\n{{- $serverTypes := multi .ModelStore \"node_extra_attribute_options\" \"q[node_extra_attribute_field_id]=3\" }}\n{{- $serverTypeMap := hash $serverTypes \"ID\" -}}\n{{- $ports := multi .ModelStore \"ports\" \"preloads=Node,PortExtraAttributes,PortExtraAttributes.PortExtraAttributeField,PortExtraAttributes.ValuePortExtraAttributeOption\" -}}\n{{- $portMap := hash $ports \"ID\" -}}\n{{- $segmentActualPortMap := map -}}\n{{- range $index, $segment := $segments -}}\n  {{- $segmentName := printf \"seg-seg%02d\" $index -}}\n  {{- $segmentActualPorts := slice -}}\n  {{- $segmentActualPortMap := put $segmentActualPortMap $segmentName $segmentActualPorts -}}\n{{- end -}}\n{{- range $index, $segment := $segments -}}\n  {{- $segmentName := printf \"seg-seg%02d\" $index -}}\n  {{- range $index2, $port := $segment.Ports -}}\n    {{- $port := get $portMap $port.ID -}}\n    {{- $pam := portattributemap $port}}\n    {{- $ps := get $pam \"pass_through\" }}\n    {{- $passthrough := index $ps 0 }}\n    {{- if eq $passthrough.ValueBool.Bool false}}\n      {{- $segmentActualPorts := get $segmentActualPortMap $segmentName -}}\n      {{- $segmentActualPorts := append $segmentActualPorts $port -}}\n      {{- $segmentActualPortMap := put $segmentActualPortMap $segmentName $segmentActualPorts -}}\n    {{- end -}}\n  {{- end -}}\n{{- end -}}\n{{$segmentActualPortMap}}\nprovider \"openvnet\" {\n  api_endpoint = \"http://172.16.3.10:9090/api/1.0\"\n}\n\n#\n# MAC address range for use in datapath-network etc.\n#\nresource \"openvnet_mac_range_group\" \"mrg\" {\n  uuid = \"mrg-dpg\"\n  mac_range {\n    begin_mac_address = \"08:00:27:aa:00:00\"\n    end_mac_address   = \"08:00:27:aa:ff:ff\"\n  }\n}\n\n#\n# Physical network\n#\nresource \"openvnet_network\" \"physical-network\" {\n  uuid         = \"nw-phys1\"\n  display_name = \"physical network that CI and ofs are on\"\n  ipv4_network = \"172.16.4.0\"\n  ipv4_prefix  = 24\n  network_mode = \"physical\"\n}\n\n#\n# CI datapath\n#\nresource \"openvnet_datapath\" \"dp-ci\" {\n  uuid         = \"dp-ci\"\n  node_id      = \"vna1\"\n  display_name = \"ci_datapath\"\n  dpid         = \"0x0000aaaaaaaaaaaa\"\n}\n\nresource \"openvnet_interface\" \"if-host-ci\" {\n  uuid                = \"if-ci\"\n  mode                = \"host\"\n  port_name           = \"eth1\"\n  mac_address         = \"02:01:00:00:00:01\"\n  owner_datapath_uuid = \"${openvnet_datapath.dp-ci.id}\"\n  network_uuid        = \"${openvnet_network.physical-network.uuid}\"\n  ipv4_address        = \"172.16.4.10\"\n}\n\n#\n# OFS datapath\n#\nresource \"openvnet_datapath\" \"dp-ofs\" {\n  uuid         = \"dp-ofs\"\n  node_id      = \"vna2\"\n  display_name = \"ofs_datapath\"\n  dpid         = \"0x0000bbbbbbbbbbbb\"\n}\n\n# The IP lease on the ofs host interface is a fake. OFS and CI are on the\n# same L2 network. This is done because the current tunnel manager code requires\n# an IP lease but we can safely assign a fake one since MAC2MAC tunnels ignore\n# IP addresses anyway. Only works if we're on the same L2 though.\nresource \"openvnet_interface\" \"if-host-ofs\" {\n  uuid                = \"if-ofs\"\n  mode                = \"host\"\n  port_name           = \"eth9\"\n  mac_address         = \"52:56:01:00:01:01\"\n  owner_datapath_uuid = \"${openvnet_datapath.dp-ofs.uuid}\"\n  network_uuid        = \"${openvnet_network.physical-network.uuid}\"\n  ipv4_address        = \"172.16.4.11\" # <= fake\n}\n\nresource \"openvnet_topology\" \"topo-physical\" {\n  uuid = \"topo-physical\"\n  mode = \"simple_underlay\"\n  network {\n    uuid = \"${openvnet_network.physical-network.uuid}\"\n  }\n\n  datapath {\n    uuid = \"${openvnet_datapath.dp-ci.uuid}\"\n    interface_uuid = \"${openvnet_interface.if-host-ci.uuid}\"\n  }\n\n  datapath {\n    uuid = \"${openvnet_datapath.dp-ofs.uuid}\"\n    interface_uuid = \"${openvnet_interface.if-host-ofs.uuid}\"\n  }\n}\n\n#\n# Below is the virtual network\n# The segments which have one or more non pass-through mode interfaces will be generated\n#\n{{- range $index, $segment := $segments}}\n  {{- $segmentName := printf \"seg-seg%02d\" $index }}\n  {{- $segmentActualPorts := get $segmentActualPortMap $segmentName }}\n  {{- $segmentActualPortCount := len $segmentActualPorts }}\n  {{- if ne $segmentActualPortCount 0 }}\nresource \"openvnet_segment\" \"{{$segmentName}}\" {\n  uuid = \"seg-seg{{printf \"%02d\" $index}}\"\n  mode = \"virtual\"\n}\n  {{- else}}\n# The segment {{$segmentName}} has no non-pass through ports, skipped\n  {{- end}}\n{{- end}}\n\nresource \"openvnet_topology\" \"topo-vnet\" {\n  uuid = \"topo-vnet\"\n  mode = \"simple_overlay\"\n\n  underlay {\n    uuid = \"${openvnet_topology.topo-physical.uuid}\"\n  }\n\n{{- range $index, $segment := $segments}}\n  {{- $segmentName := printf \"seg-seg%02d\" $index }}\n  {{- $segmentActualPorts := get $segmentActualPortMap $segmentName }}\n  {{- $segmentActualPortCount := len $segmentActualPorts }}\n  {{- if ne $segmentActualPortCount 0 }}\n  segment {\n    uuid = \"${openvnet_segment.{{$segmentName}}.uuid}\"\n  }\n  {{- else}}\n  # The segment {{$segmentName}} has no non-pass through ports, skipped\n  {{- end}}\n{{- end}}\n}\n\n{{- $interfaceIndexMap := map}}\n{{- range $index, $node := $nodes}}\n  {{- $interfaceIndexMap := put $interfaceIndexMap $node.Name 0}}\n{{- end}}\n{{- range $index, $segment := $segments}}\n\n#\n# Interfaces in segment seg-seg{{printf \"%02d\" $index}}\n# The interfaces which are not in pass-through mode will be generated\n#\n  {{- range $index2, $port := $segment.Ports}}\n    {{- $port := get $portMap $port.ID}}\n    {{- $node := get $nodeMap $port.Node.ID}}\n    {{- $interfaceIndex := get $interfaceIndexMap $port.Node.Name}}\n    {{- $pam := portattributemap $port}}\n    {{- $ps := get $pam \"pass_through\" }}\n    {{- $passthrough := index $ps 0 }}\n    {{- if eq $passthrough.ValueBool.Bool false}}\n      {{- $nam := nodeattributemap $node}}\n      {{- $vs := get $nam \"virtual\" }}\n      {{- $virtual := index $vs 0 }}\n      {{- if eq $virtual.ValueBool.Bool false}}\nresource \"openvnet_interface\" \"{{$port.Node.Name}}-seg{{printf \"%02d\" $index}}\" {\n  uuid                = \"if-{{$port.Node.Name}}{{$port.Name}}\"\n  port_name           = \"{{$port.Name}}\"\n  owner_datapath_uuid = \"${openvnet_datapath.dp-ofs.uuid}\"\n  segment_uuid        = \"${openvnet_segment.seg-seg{{printf \"%02d\" $index}}.uuid}\"\n  mac_address         = \"{{$port.MacAddress.String}}\"\n  mode                = \"vif\"\n}\n      {{- else}}\nresource \"openvnet_interface\" \"{{$port.Node.Name}}-{{printf \"%02d\" $interfaceIndex}}\" {\n  uuid                = \"if-{{$port.Node.Name}}{{printf \"%02d\" $interfaceIndex}}\"\n  port_name           = \"${openvdc_instance.{{$port.Node.Name}}.id}_{{printf \"%02d\" $interfaceIndex}}\"\n  segment_uuid        = \"${openvnet_segment.seg-seg{{printf \"%02d\" $index}}.uuid}\"\n  mac_address         = \"{{$port.MacAddress.String}}\"\n  mode                = \"vif\"\n}\n      {{- end}}\n      {{- $interfaceIndex := add $interfaceIndex 1}}\n      {{- $interfaceIndexMap := put $interfaceIndexMap $port.Node.Name $interfaceIndex}}\n    {{- else}}\n# The interface if-{{$port.Node.Name}}-{{$port.Name}} is in pass-through mode, skipped\n    {{- end}}\n  {{- end}}\n{{- end}}\n\n#\n# OpenVDC instances\n# Nodes which have a valid ServerType will be generated\n#\n{{- range $index, $node := $nodes }}\n  {{- $nam := nodeattributemap $node }}\n  {{- $sts := get $nam \"server_type\" }}\n  {{- $st := index $sts 0 }}\n  {{- if eq $st.ValueNodeExtraAttributeOptionID.Valid true }}\n    {{- $so := $st.ValueNodeExtraAttributeOptionID.Int64 }}\n    {{- $si :=  int $so }}\n    {{- $serverType := get $serverTypeMap $si }}\nresource \"openvdc_instance\" \"{{$node.Name}}\" {\n  template = \"{{$serverType.ValueString.String}}\"\n\n    {{- range $index2, $port := $node.Ports}}\n  interface {\n    type = \"veth\"\n    bridge = \"ovs\"\n    ipv4addr = \"{{$port.Ipv4Address.String}}\"\n    macaddr = \"{{$port.MacAddress.String}}\"\n  }\n\n    {{- end}}\n}\n  {{- else}}\n# The server type of the node {{$node.Name}} is None, skipped\n  {{- end}}\n{{- end}}\n\n#\n# Output\n# Nodes which have a valid ServerType will be generated\n#\n{{- range $index, $node := $nodes }}\n  {{- $nam := nodeattributemap $node }}\n  {{- $sts := get $nam \"server_type\" }}\n  {{- $st := index $sts 0 }}\n  {{- if eq $st.ValueNodeExtraAttributeOptionID.Valid true }}\noutput \"{{$node.Name}}\" {\n  value = \"${openvdc_instance.{{$node.Name}}.id}\"\n}\n  {{- else}}\n# The server type of the node {{$node.Name}} is None, skipped\n  {{- end}}\n{{- end}}",
+        "template_persistent_parameters": null
+      },
+      {
+        "id": 6,
+        "name": "test_runner_script",
+        "template_content": "#!/bin/bash\n\nfunction loadInstanceIDs() {\n  echo \"declare -A instances\"\n  terraform show | egrep -o 'openvdc_instance.[^:]+:' | sed -e 's/openvdc_instance.\\([^:]*\\):/\\1/g' | while read instance_name; do\n    instance_id=`terraform show | grep -a1 \"openvdc_instance.${instance_name}:\" | tail -n1 | awk -F\"= \" '{print $2}'`\n    echo \"instances[${instance_name}]=${instance_id}\"\n  done\n}\n\n`loadInstanceIDs`\n\n#work_dir=\"/var/lib/jenkins/workspace/network.test\"\nwork_dir=\"/data/clay_generated_conf\"\ntestcase_dir=\"${work_dir}/{{.Environment.TestCaseDirectoryName}}\"\nresult_file=\"${work_dir}/test_result.txt\"\nlog_file=\"${work_dir}/test_log.txt\"\n\n\\rm -f ${result_file} ${log_file}\n\ncd ${testcase_dir}\n\nfind . -type f -name \"*_firewall.sh\" | sort  | while read test_script; do\n  number=\"`echo ${test_script} | awk -F_ '{print $1}' | sed -e 's/\\.\\///g'`\"\n  client_instance_name=\"`echo ${test_script} | awk -F_ '{print $2}' | sed -e 's/\\.\\///g'`\"\n  client_instance_id=\"${instances[${client_instance_name}]}\"\n  server_instance_name=\"`echo ${test_script} | awk -F_ '{print $4}'`\"\n  server_instance_id=\"${instances[${server_instance_name}]}\"\n  access=\"`echo ${test_script} | awk -F_ '{print $5}'`\"\n  if [ \"${access}\" == \"allow\" ]; then\n    access=\"Allow\"\n  else\n    access=\"Deny\"\n  fi\n  protocol=\"`echo ${test_script} | awk -F_ '{print $6}'`\"\n  \n  prefixResult=\"${number}_${client_instance_name}_to_${server_instance_name}_${protocol}\"\n  echo \"----- ${test_script} -----\" | tee -a ${log_file}\n\n  chmod 755 ${test_script}\n  test_script_log=\"`${test_script}`\"\n  test_script_result=$?\n  echo \"${test_script_log}\" | tee -a ${log_file}\n\n  if [ ${test_script_result} -ne 0 ]; then\n    echo \"${prefixResult},${access},NG\" | tee -a ${result_file}\n  fi\n  echo \"---------------------\" | tee -a ${log_file}\ndone\n",
+        "template_persistent_parameters": null
+      },
+      {
+        "id": 7,
+        "name": "ssh Firewall TestProgram",
+        "template_content": "#!/bin/bash\n\nset -e\n\nfunction loadInstanceIDs() {\n  echo \"declare -A instances\"\n  terraform show | egrep -o 'openvdc_instance.[^:]+:' | sed -e 's/openvdc_instance.\\([^:]*\\):/\\1/g' | while read instance_name; do\n    instance_id=`terraform show | grep -a1 \"openvdc_instance.${instance_name}:\" | tail -n1 | awk -F\"= \" '{print $2}'`\n    echo \"instances[${instance_name}]=${instance_id}\"\n  done\n}\n\n`loadInstanceIDs`\n\nclient_instance_id=\"${instances[{{.SourcePort.Node.Name}}]}\"\nserver_instance_id=\"${instances[{{.DestinationPort.Node.Name}}]}\"\n\nopenvdc wait ${client_instance_id} running\nopenvdc wait ${server_instance_id} running\n\nopenvdc console ${server_instance_id} <<EOF\nservice sshd start\nEOF\n\nopenvdc console ${client_instance_id} <<EOF\nnc -v -z -w 1 {{.DestinationPort.Ipv4Address.String}} 22\n{{if eq .Access true}}\nif [ $? -eq 0 ]; then\n  exit 0\nelse\n  exit 1\nfi\n{{else}}\nif [ $? -eq 0 ]; then\n  exit 1\nelse\n  exit 0\nfi\n{{end}}\nEOF",
+        "template_persistent_parameters": null
+      },
+      {
+        "id": 8,
+        "name": "ping Firewall TestProgram",
+        "template_content": "#!/bin/bash\n\nset -e\n\nfunction loadInstanceIDs() {\n  echo \"declare -A instances\"\n  terraform show | egrep -o 'openvdc_instance.[^:]+:' | sed -e 's/openvdc_instance.\\([^:]*\\):/\\1/g' | while read instance_name; do\n    instance_id=`terraform show | grep -a1 \"openvdc_instance.${instance_name}:\" | tail -n1 | awk -F\"= \" '{print $2}'`\n    echo \"instances[${instance_name}]=${instance_id}\"\n  done\n}\n\n`loadInstanceIDs`\n\nclient_instance_id=\"${instances[{{.SourcePort.Node.Name}}]}\"\nserver_instance_id=\"${instances[{{.DestinationPort.Node.Name}}]}\"\n\nopenvdc wait ${client_instance_id} running\nopenvdc wait ${server_instance_id} running\n\nopenvdc console ${client_instance_id} <<EOF\nping -W 5 -c 1 {{.DestinationPort.Ipv4Address.String}}\nping -W 5 -c 1 {{.DestinationPort.Ipv4Address.String}}\nping -W 5 -c 1 {{.DestinationPort.Ipv4Address.String}}\nping -W 5 -c 4 {{.DestinationPort.Ipv4Address.String}}\n{{if eq .Access true}}\nif [ $? -eq 0 ]; then\n  exit 0\nelse\n  exit 1\nfi\n{{else}}\nif [ $? -eq 0 ]; then\n  exit 1\nelse\n  exit 0\nfi\n{{end}}\nEOF\n",
+        "template_persistent_parameters": null
+      },
+      {
+        "id": 9,
+        "name": "http Firewall TestProgram",
+        "template_content": "#!/bin/bash\n\nset -e\n\nfunction loadInstanceIDs() {\n  echo \"declare -A instances\"\n  terraform show | egrep -o 'openvdc_instance.[^:]+:' | sed -e 's/openvdc_instance.\\([^:]*\\):/\\1/g' | while read instance_name; do\n    instance_id=`terraform show | grep -a1 \"openvdc_instance.${instance_name}:\" | tail -n1 | awk -F\"= \" '{print $2}'`\n    echo \"instances[${instance_name}]=${instance_id}\"\n  done\n}\n\n`loadInstanceIDs`\n\nclient_instance_id=\"${instances[{{.SourcePort.Node.Name}}]}\"\nserver_instance_id=\"${instances[{{.DestinationPort.Node.Name}}]}\"\n\nopenvdc wait ${client_instance_id} running\nopenvdc wait ${server_instance_id} running\n\nopenvdc console ${server_instance_id} <<EOF\nservice httpd start\nEOF\n\nopenvdc console ${client_instance_id} <<EOF\ncurl http://{{.DestinationPort.Ipv4Address.String}}/\n{{if eq .Access true}}\nif [ $? -eq 0 ]; then\n  exit 0\nelse\n  exit 1\nfi\n{{else}}\nif [ $? -eq 0 ]; then\n  exit 1\nelse\n  exit 0\nfi\n{{end}}\nEOF",
+        "template_persistent_parameters": null
+      },
+      {
+        "id": 10,
+        "name": "https Firewall TestProgram",
+        "template_content": "#!/bin/bash\n\nset -e\n\nfunction loadInstanceIDs() {\n  echo \"declare -A instances\"\n  terraform show | egrep -o 'openvdc_instance.[^:]+:' | sed -e 's/openvdc_instance.\\([^:]*\\):/\\1/g' | while read instance_name; do\n    instance_id=`terraform show | grep -a1 \"openvdc_instance.${instance_name}:\" | tail -n1 | awk -F\"= \" '{print $2}'`\n    echo \"instances[${instance_name}]=${instance_id}\"\n  done\n}\n\n`loadInstanceIDs`\n\nclient_instance_id=\"${instances[{{.SourcePort.Node.Name}}]}\"\nserver_instance_id=\"${instances[{{.DestinationPort.Node.Name}}]}\"\n\nopenvdc wait ${client_instance_id} running\nopenvdc wait ${server_instance_id} running\n\nopenvdc console ${server_instance_id} <<EOF\nservice httpd start\nEOF\n\nopenvdc console ${client_instance_id} <<EOF\ncurl --insecure https://{{.DestinationPort.Ipv4Address.String}}/\n{{if eq .Access true}}\nif [ $? -eq 0 ]; then\n  exit 0\nelse\n  exit 1\nfi\n{{else}}\nif [ $? -eq 0 ]; then\n  exit 1\nelse\n  exit 0\nfi\n{{end}}\n",
+        "template_persistent_parameters": null
+      }
+    ]
+  }
+}
