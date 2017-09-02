@@ -1,5 +1,5 @@
 hash: aa83e4af0f9331ee48afe00e163eb3fe38852e3c73ff75c73fe3218269ff5b36
-updated: 2017-08-09T10:11:29.854786304+09:00
+updated: 2017-09-02T16:55:33.204781171+09:00
 imports:
 - name: github.com/elazarl/go-bindata-assetfs
   version: 30f82fa23fd844bd5bb1e5f216db87fd77b5eb43
@@ -31,14 +31,14 @@ imports:
 - name: github.com/mattn/go-sqlite3
   version: ca5e3819723d8eeaf170ad510e7da1d6d2e94a08
 - name: github.com/qb0C80aE/loam
-  version: d8248aa080f1d29aff9cd49e6beca61a77782654
+  version: 60a0567c3360d716ce461d0226a7c6ee373c8ca8
   subpackages:
   - controllers
   - logics
   - models
   - utils/net
 - name: github.com/qb0C80aE/pottery
-  version: 910c4751ff7141373c5012009a486d4c839be2cb
+  version: f734c50768268d2375037aacd9c1cb7de32040fb
   subpackages:
   - controllers
   - logics
