@@ -2,7 +2,7 @@
 
 mkdir -p demo
 cd demo
-cp ../linux_amd64/clay .
+cp ../linux_amd64/clay/clay .
 cp ../examples/design.json .
 chmod 755 ./clay
 (HOST=127.0.0.1 PORT=60000 DB_MODE=file DB_FILE=./clay.db ./clay) &
