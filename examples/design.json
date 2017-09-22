@@ -140,8 +140,8 @@
         "name": "",
         "icon": "",
         "meta": null,
-        "x": 652.5307584449965,
-        "y": 530.8697816432906
+        "x": 974.5307584449965,
+        "y": 200.86976638450153
       },
       {
         "id": 15,
@@ -227,6 +227,7 @@
         "test_script_template": null
       }
     ],
+    "free_style_test_programs": [],
     "node_extra_attribute_fields": [
       {
         "id": 1,
@@ -300,7 +301,7 @@
           "Valid": false
         },
         "value_string": {
-          "String": "tftp/lxc",
+          "String": "/data/openvdc_templates/tftp.json",
           "Valid": true
         }
       },
@@ -308,7 +309,7 @@
         "id": 3,
         "node_extra_attribute_field_id": 3,
         "node_extra_attribute_field": null,
-        "name": "provisioner",
+        "name": "kompira",
         "value_int": {
           "Int64": 3,
           "Valid": true
@@ -322,7 +323,7 @@
           "Valid": false
         },
         "value_string": {
-          "String": "provisioner/lxc",
+          "String": "/data/openvdc_templates/kompira.json",
           "Valid": true
         }
       },
@@ -344,7 +345,7 @@
           "Valid": false
         },
         "value_string": {
-          "String": "telnethop/lxc",
+          "String": "/data/openvdc_templates/telnethop.json",
           "Valid": true
         }
       }
@@ -1718,7 +1719,7 @@
           "Valid": false
         },
         "value_string": {
-          "String": "commands=(\n    \"save software from tftp 192.168.1.10 ssg5ssg20.6.1.0r2.0 to flash\"\n    \"unset all | confirm: yes\"\n    \"reset     | confirm: no yes\"\n    \"exit      | confirm: yes\"\n)\n",
+          "String": "save software from tftp 192.168.1.10 ssg5ssg20.6.1.0r2.0 to flash\nunset all | confirm: yes\nreset | confirm: no yes\nexit | confirm: yes",
           "Valid": true
         }
       },
@@ -1746,7 +1747,7 @@
           "Valid": false
         },
         "value_string": {
-          "String": "commands=(\n    \"unset interface bgroup0 port eth0/2\"\n    \"unset interface bgroup0 port eth0/3\"\n    \"unset interface bgroup0 port eth0/4\"\n    \"unset interface bgroup0 port eth0/6\"\n    \"set zone name Internet\"\n    \"set zone name segment1\"\n    \"set zone name segment2\"\n    \"set zone name segment-tftp\"\n    \"set interface eth0/0 zone segment1\"\n    \"set interface eth0/0 ip 10.0.0.1/24\"\n    \"set interface eth0/1 zone segment2\"\n    \"set interface eth0/1 ip 10.0.1.1/24\"\n    \"set interface eth0/6 zone Internet\"\n    \"set interface eth0/6 ip 192.168.200.1/24\"\n    \"set route 0.0.0.0/0 interface eth0/6 gateway 192.168.200.2\"\n    \"set policy from segment1 to Internet any any ANY nat src permit\"\n    \"exit | confirm: yes\"\n)\n\n#    \"unset interface bgroup0 ip\"\n#    \"unset interface bgroup0 port eth0/5\"\n#    \"set interface eth0/5 zone Trust\"\n#    \"set interface eth0/5 ip 192.168.1.1/24\"\n",
+          "String": "unset interface bgroup0 port eth0/2\nunset interface bgroup0 port eth0/3\nunset interface bgroup0 port eth0/4\nunset interface bgroup0 port eth0/6\nset zone name Internet\nset zone name segment1\nset zone name segment2\nset zone name segment-tftp\nset interface eth0/0 manage ping\nset interface eth0/0 zone segment1\nset interface eth0/0 ip 10.0.0.1/24\nset interface eth0/0 manage ping\nset interface eth0/1 zone segment2\nset interface eth0/1 ip 10.0.1.1/24\nset interface eth0/6 zone Internet\nset interface eth0/6 ip 192.168.200.1/24\nset route 0.0.0.0/0 interface eth0/6 gateway 192.168.200.2\nset policy from segment1 to Internet any any ANY nat src permit\n\n# uncomment these commands to make the tests pass\n# unset interface bgroup0 ip\n# unset interface bgroup0 port eth0/5\n# set interface eth0/5 zone Trust\n# set interface eth0/5 ip 192.168.1.1/24\n\nexit | confirm: yes",
           "Valid": true
         }
       },
@@ -3785,7 +3786,7 @@
           "Valid": false
         },
         "value_string": {
-          "String": "192.168.4.1",
+          "String": "",
           "Valid": true
         }
       },
@@ -5244,6 +5245,174 @@
           "String": "",
           "Valid": false
         }
+      },
+      {
+        "id": 120,
+        "port_id": 42,
+        "port": null,
+        "port_extra_attribute_field_id": 1,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "192.168.200.2",
+          "Valid": true
+        }
+      },
+      {
+        "id": 121,
+        "port_id": 42,
+        "port": null,
+        "port_extra_attribute_field_id": 3,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 122,
+        "port_id": 42,
+        "port": null,
+        "port_extra_attribute_field_id": 2,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 123,
+        "port_id": 43,
+        "port": null,
+        "port_extra_attribute_field_id": 1,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
+      },
+      {
+        "id": 124,
+        "port_id": 43,
+        "port": null,
+        "port_extra_attribute_field_id": 3,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": true
+        },
+        "value_string": {
+          "String": "",
+          "Valid": false
+        }
+      },
+      {
+        "id": 125,
+        "port_id": 43,
+        "port": null,
+        "port_extra_attribute_field_id": 2,
+        "port_extra_attribute_field": null,
+        "value_port_extra_attribute_option_id": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_port_extra_attribute_option": null,
+        "value_int": {
+          "Int64": 0,
+          "Valid": false
+        },
+        "value_float": {
+          "Float64": 0,
+          "Valid": false
+        },
+        "value_bool": {
+          "Bool": false,
+          "Valid": false
+        },
+        "value_string": {
+          "String": "",
+          "Valid": true
+        }
       }
     ],
     "ports": [
@@ -5252,13 +5421,15 @@
         "node_id": 1,
         "node": null,
         "layer": 3,
-        "number": 1,
+        "number": 0,
         "name": "eth1",
         "destination_port_id": {
           "Int64": 8,
           "Valid": true
         },
         "destination_port": null,
+        "tagged": false,
+        "vlans": null,
         "mac_address": {
           "String": "84:b5:9c:56:fa:c0",
           "Valid": true
@@ -5278,13 +5449,15 @@
         "node_id": 1,
         "node": null,
         "layer": 3,
-        "number": 2,
+        "number": 1,
         "name": "eth2",
         "destination_port_id": {
           "Int64": 10,
           "Valid": true
         },
         "destination_port": null,
+        "tagged": false,
+        "vlans": null,
         "mac_address": {
           "String": "84:b5:9c:56:fa:c5",
           "Valid": true
@@ -5304,13 +5477,15 @@
         "node_id": 1,
         "node": null,
         "layer": 1,
-        "number": 3,
+        "number": 2,
         "name": "eth3",
         "destination_port_id": {
           "Int64": 0,
           "Valid": false
         },
         "destination_port": null,
+        "tagged": false,
+        "vlans": null,
         "mac_address": {
           "String": "",
           "Valid": false
@@ -5330,13 +5505,15 @@
         "node_id": 1,
         "node": null,
         "layer": 1,
-        "number": 4,
+        "number": 3,
         "name": "eth4",
         "destination_port_id": {
           "Int64": 0,
           "Valid": false
         },
         "destination_port": null,
+        "tagged": false,
+        "vlans": null,
         "mac_address": {
           "String": "",
           "Valid": false
@@ -5356,13 +5533,15 @@
         "node_id": 1,
         "node": null,
         "layer": 1,
-        "number": 5,
+        "number": 4,
         "name": "eth5",
         "destination_port_id": {
           "Int64": 0,
           "Valid": false
         },
         "destination_port": null,
+        "tagged": false,
+        "vlans": null,
         "mac_address": {
           "String": "",
           "Valid": false
@@ -5382,13 +5561,15 @@
         "node_id": 1,
         "node": null,
         "layer": 3,
-        "number": 6,
+        "number": 5,
         "name": "eth6",
         "destination_port_id": {
           "Int64": 18,
           "Valid": true
         },
         "destination_port": null,
+        "tagged": false,
+        "vlans": null,
         "mac_address": {
           "String": "84:b5:9c:56:fa:cb",
           "Valid": true
@@ -5408,13 +5589,15 @@
         "node_id": 1,
         "node": null,
         "layer": 3,
-        "number": 7,
+        "number": 6,
         "name": "eth7",
         "destination_port_id": {
           "Int64": 32,
           "Valid": true
         },
         "destination_port": null,
+        "tagged": false,
+        "vlans": null,
         "mac_address": {
           "String": "84:b5:9c:56:fa:ca",
           "Valid": true
@@ -5434,13 +5617,15 @@
         "node_id": 2,
         "node": null,
         "layer": 1,
-        "number": 1,
+        "number": 0,
         "name": "p0",
         "destination_port_id": {
           "Int64": 1,
           "Valid": true
         },
         "destination_port": null,
+        "tagged": false,
+        "vlans": null,
         "mac_address": {
           "String": "",
           "Valid": false
@@ -5460,13 +5645,15 @@
         "node_id": 2,
         "node": null,
         "layer": 1,
-        "number": 2,
+        "number": 1,
         "name": "p1",
         "destination_port_id": {
           "Int64": 14,
           "Valid": true
         },
         "destination_port": null,
+        "tagged": false,
+        "vlans": null,
         "mac_address": {
           "String": "",
           "Valid": false
@@ -5486,13 +5673,15 @@
         "node_id": 3,
         "node": null,
         "layer": 1,
-        "number": 1,
+        "number": 0,
         "name": "p0",
         "destination_port_id": {
           "Int64": 2,
           "Valid": true
         },
         "destination_port": null,
+        "tagged": false,
+        "vlans": null,
         "mac_address": {
           "String": "",
           "Valid": false
@@ -5512,13 +5701,15 @@
         "node_id": 3,
         "node": null,
         "layer": 1,
-        "number": 2,
+        "number": 1,
         "name": "p1",
         "destination_port_id": {
           "Int64": 16,
           "Valid": true
         },
         "destination_port": null,
+        "tagged": false,
+        "vlans": null,
         "mac_address": {
           "String": "",
           "Valid": false
@@ -5538,13 +5729,15 @@
         "node_id": 3,
         "node": null,
         "layer": 1,
-        "number": 3,
+        "number": 2,
         "name": "p2",
         "destination_port_id": {
           "Int64": 17,
           "Valid": true
         },
         "destination_port": null,
+        "tagged": false,
+        "vlans": null,
         "mac_address": {
           "String": "",
           "Valid": false
@@ -5564,13 +5757,15 @@
         "node_id": 2,
         "node": null,
         "layer": 1,
-        "number": 3,
+        "number": 2,
         "name": "p2",
         "destination_port_id": {
           "Int64": 15,
           "Valid": true
         },
         "destination_port": null,
+        "tagged": false,
+        "vlans": null,
         "mac_address": {
           "String": "",
           "Valid": false
@@ -5590,13 +5785,15 @@
         "node_id": 4,
         "node": null,
         "layer": 3,
-        "number": 1,
+        "number": 0,
         "name": "eth0",
         "destination_port_id": {
           "Int64": 9,
           "Valid": true
         },
         "destination_port": null,
+        "tagged": false,
+        "vlans": null,
         "mac_address": {
           "String": "10:54:ff:00:00:01",
           "Valid": true
@@ -5616,13 +5813,15 @@
         "node_id": 5,
         "node": null,
         "layer": 3,
-        "number": 1,
+        "number": 0,
         "name": "eth0",
         "destination_port_id": {
           "Int64": 13,
           "Valid": true
         },
         "destination_port": null,
+        "tagged": false,
+        "vlans": null,
         "mac_address": {
           "String": "10:54:ff:00:00:02",
           "Valid": true
@@ -5642,13 +5841,15 @@
         "node_id": 6,
         "node": null,
         "layer": 3,
-        "number": 1,
+        "number": 0,
         "name": "eth0",
         "destination_port_id": {
           "Int64": 11,
           "Valid": true
         },
         "destination_port": null,
+        "tagged": false,
+        "vlans": null,
         "mac_address": {
           "String": "10:54:ff:00:00:03",
           "Valid": true
@@ -5668,13 +5869,15 @@
         "node_id": 7,
         "node": null,
         "layer": 3,
-        "number": 1,
+        "number": 0,
         "name": "eth0",
         "destination_port_id": {
           "Int64": 12,
           "Valid": true
         },
         "destination_port": null,
+        "tagged": false,
+        "vlans": null,
         "mac_address": {
           "String": "10:54:ff:00:00:04",
           "Valid": true
@@ -5694,13 +5897,15 @@
         "node_id": 8,
         "node": null,
         "layer": 1,
-        "number": 1,
+        "number": 0,
         "name": "p0",
         "destination_port_id": {
           "Int64": 6,
           "Valid": true
         },
         "destination_port": null,
+        "tagged": false,
+        "vlans": null,
         "mac_address": {
           "String": "",
           "Valid": false
@@ -5720,13 +5925,15 @@
         "node_id": 8,
         "node": null,
         "layer": 1,
-        "number": 2,
+        "number": 1,
         "name": "p1",
         "destination_port_id": {
           "Int64": 26,
           "Valid": true
         },
         "destination_port": null,
+        "tagged": false,
+        "vlans": null,
         "mac_address": {
           "String": "",
           "Valid": false
@@ -5746,13 +5953,15 @@
         "node_id": 8,
         "node": null,
         "layer": 1,
-        "number": 3,
+        "number": 2,
         "name": "p2",
         "destination_port_id": {
           "Int64": 21,
           "Valid": true
         },
         "destination_port": null,
+        "tagged": false,
+        "vlans": null,
         "mac_address": {
           "String": "",
           "Valid": false
@@ -5772,13 +5981,15 @@
         "node_id": 9,
         "node": null,
         "layer": 3,
-        "number": 1,
+        "number": 0,
         "name": "eth0",
         "destination_port_id": {
           "Int64": 20,
           "Valid": true
         },
         "destination_port": null,
+        "tagged": false,
+        "vlans": null,
         "mac_address": {
           "String": "10:54:ff:00:00:10",
           "Valid": true
@@ -5798,13 +6009,15 @@
         "node_id": 10,
         "node": null,
         "layer": 1,
-        "number": 1,
+        "number": 0,
         "name": "p0",
         "destination_port_id": {
           "Int64": 27,
           "Valid": true
         },
         "destination_port": null,
+        "tagged": false,
+        "vlans": null,
         "mac_address": {
           "String": "",
           "Valid": false
@@ -5824,13 +6037,15 @@
         "node_id": 10,
         "node": null,
         "layer": 1,
-        "number": 2,
+        "number": 1,
         "name": "p1",
         "destination_port_id": {
           "Int64": 28,
           "Valid": true
         },
         "destination_port": null,
+        "tagged": false,
+        "vlans": null,
         "mac_address": {
           "String": "",
           "Valid": false
@@ -5850,13 +6065,15 @@
         "node_id": 11,
         "node": null,
         "layer": 1,
-        "number": 1,
+        "number": 0,
         "name": "p0",
         "destination_port_id": {
           "Int64": 29,
           "Valid": true
         },
         "destination_port": null,
+        "tagged": false,
+        "vlans": null,
         "mac_address": {
           "String": "",
           "Valid": false
@@ -5876,13 +6093,15 @@
         "node_id": 11,
         "node": null,
         "layer": 1,
-        "number": 2,
+        "number": 1,
         "name": "p1",
         "destination_port_id": {
           "Int64": 30,
           "Valid": true
         },
         "destination_port": null,
+        "tagged": false,
+        "vlans": null,
         "mac_address": {
           "String": "",
           "Valid": false
@@ -5902,13 +6121,15 @@
         "node_id": 12,
         "node": null,
         "layer": 3,
-        "number": 1,
-        "name": "tftptap",
+        "number": 0,
+        "name": "eth0",
         "destination_port_id": {
           "Int64": 19,
           "Valid": true
         },
         "destination_port": null,
+        "tagged": false,
+        "vlans": null,
         "mac_address": {
           "String": "10:54:ff:aa:00:05",
           "Valid": true
@@ -5928,13 +6149,15 @@
         "node_id": 12,
         "node": null,
         "layer": 3,
-        "number": 2,
-        "name": "hoptap1",
+        "number": 1,
+        "name": "eth1",
         "destination_port_id": {
           "Int64": 22,
           "Valid": true
         },
         "destination_port": null,
+        "tagged": false,
+        "vlans": null,
         "mac_address": {
           "String": "10:54:ff:aa:00:04",
           "Valid": true
@@ -5954,13 +6177,15 @@
         "node_id": 13,
         "node": null,
         "layer": 3,
-        "number": 1,
-        "name": "hoptap2",
+        "number": 0,
+        "name": "eth0",
         "destination_port_id": {
           "Int64": 23,
           "Valid": true
         },
         "destination_port": null,
+        "tagged": false,
+        "vlans": null,
         "mac_address": {
           "String": "10:54:ff:aa:00:03",
           "Valid": true
@@ -5980,13 +6205,15 @@
         "node_id": 13,
         "node": null,
         "layer": 3,
-        "number": 2,
-        "name": "provtap",
+        "number": 1,
+        "name": "eth1",
         "destination_port_id": {
           "Int64": 24,
           "Valid": true
         },
         "destination_port": null,
+        "tagged": false,
+        "vlans": null,
         "mac_address": {
           "String": "10:54:ff:aa:00:02",
           "Valid": true
@@ -6006,13 +6233,15 @@
         "node_id": 14,
         "node": null,
         "layer": 3,
-        "number": 1,
+        "number": 0,
         "name": "eth0",
         "destination_port_id": {
           "Int64": 25,
           "Valid": true
         },
         "destination_port": null,
+        "tagged": false,
+        "vlans": null,
         "mac_address": {
           "String": "10:54:ff:aa:00:01",
           "Valid": true
@@ -6032,13 +6261,15 @@
         "node_id": 15,
         "node": null,
         "layer": 3,
-        "number": 1,
+        "number": 0,
         "name": "eth8",
         "destination_port_id": {
           "Int64": 33,
           "Valid": true
         },
         "destination_port": null,
+        "tagged": false,
+        "vlans": null,
         "mac_address": {
           "String": "52:56:01:00:01:aa",
           "Valid": true
@@ -6058,13 +6289,15 @@
         "node_id": 16,
         "node": null,
         "layer": 1,
-        "number": 1,
+        "number": 0,
         "name": "p0",
         "destination_port_id": {
           "Int64": 7,
           "Valid": true
         },
         "destination_port": null,
+        "tagged": false,
+        "vlans": null,
         "mac_address": {
           "String": "",
           "Valid": false
@@ -6084,13 +6317,15 @@
         "node_id": 16,
         "node": null,
         "layer": 1,
-        "number": 2,
+        "number": 1,
         "name": "p1",
         "destination_port_id": {
           "Int64": 31,
           "Valid": true
         },
         "destination_port": null,
+        "tagged": false,
+        "vlans": null,
         "mac_address": {
           "String": "",
           "Valid": false
@@ -6110,13 +6345,15 @@
         "node_id": 19,
         "node": null,
         "layer": 3,
-        "number": 1,
+        "number": 0,
         "name": "p0",
         "destination_port_id": {
           "Int64": 40,
           "Valid": true
         },
         "destination_port": null,
+        "tagged": false,
+        "vlans": null,
         "mac_address": {
           "String": "10:54:ff:99:00:02",
           "Valid": true
@@ -6136,13 +6373,15 @@
         "node_id": 19,
         "node": null,
         "layer": 3,
-        "number": 2,
+        "number": 1,
         "name": "p1",
         "destination_port_id": {
           "Int64": 41,
           "Valid": true
         },
         "destination_port": null,
+        "tagged": false,
+        "vlans": null,
         "mac_address": {
           "String": "10:54:ff:99:00:03",
           "Valid": true
@@ -6162,13 +6401,15 @@
         "node_id": 15,
         "node": null,
         "layer": 3,
-        "number": 2,
+        "number": 1,
         "name": "eth9",
         "destination_port_id": {
           "Int64": 38,
           "Valid": true
         },
         "destination_port": null,
+        "tagged": false,
+        "vlans": null,
         "mac_address": {
           "String": "10:54:ff:99:00:01",
           "Valid": true
@@ -6188,13 +6429,15 @@
         "node_id": 20,
         "node": null,
         "layer": 3,
-        "number": 1,
+        "number": 0,
         "name": "eth0",
         "destination_port_id": {
           "Int64": 39,
           "Valid": true
         },
         "destination_port": null,
+        "tagged": false,
+        "vlans": null,
         "mac_address": {
           "String": "10:54:ff:99:00:04",
           "Valid": true
@@ -6206,6 +6449,62 @@
         "ipv4_prefix": {
           "Int64": 8,
           "Valid": true
+        },
+        "port_extra_attributes": null
+      },
+      {
+        "id": 42,
+        "node_id": 14,
+        "node": null,
+        "layer": 3,
+        "number": 1,
+        "name": "eth1",
+        "destination_port_id": {
+          "Int64": 43,
+          "Valid": true
+        },
+        "destination_port": null,
+        "tagged": false,
+        "vlans": null,
+        "mac_address": {
+          "String": "10:54:ff:bb:00:01",
+          "Valid": true
+        },
+        "ipv4_address": {
+          "String": "192.168.200.20",
+          "Valid": true
+        },
+        "ipv4_prefix": {
+          "Int64": 24,
+          "Valid": true
+        },
+        "port_extra_attributes": null
+      },
+      {
+        "id": 43,
+        "node_id": 16,
+        "node": null,
+        "layer": 1,
+        "number": 2,
+        "name": "p2",
+        "destination_port_id": {
+          "Int64": 42,
+          "Valid": true
+        },
+        "destination_port": null,
+        "tagged": false,
+        "vlans": null,
+        "mac_address": {
+          "String": "",
+          "Valid": false
+        },
+        "ipv4_address": {
+          "String": "",
+          "Valid": false
+        },
+        "ipv4_prefix": {
+          "Int64": 0,
+          "Valid": false
         },
         "port_extra_attributes": null
       }
@@ -6369,31 +6668,31 @@
       {
         "id": 1,
         "name": "inst_initial_server_script",
-        "template_content": "#!/bin/bash\n{{- range $index, $port := .Node.Ports}}\n{{- $pam := portattributemap $port}}\n{{- $gwa := get $pam \"gateway\" }}\n{{- $gw := index $gwa 0 }}\nip addr add {{$port.Ipv4Address.String}}/{{$port.Ipv4Prefix.Int64}} dev {{$port.Name}}\n{{if eq $index 0}}ip route add default via {{$gw.ValueString.String}}{{end}}\n{{end}}",
+        "template_content": "#!/bin/bash\n{{- range $index, $port := .Node.Ports}}\n{{- $pam := portattributemap $port}}\n{{- $gwa := get $pam \"gateway\" }}\n{{- $gw := index $gwa 0 }}\nip addr flush {{$port.Name}}\nip addr add {{$port.Ipv4Address.String}}/{{$port.Ipv4Prefix.Int64}} dev {{$port.Name}}\n{{if eq $index 0}}ip route add default via {{$gw.ValueString.String}}{{end}}\n{{end}}\n",
         "template_persistent_parameters": null
       },
       {
         "id": 2,
         "name": "tftp_initial_server_script",
-        "template_content": "#!/bin/bash\n{{- range $index, $port := .Node.Ports}}\n{{- $pam := portattributemap $port}}\n{{- $gwa := get $pam \"gateway\" }}\n{{- $gw := index $gwa 0 }}\nip addr add {{$port.Ipv4Address.String}}/{{$port.Ipv4Prefix.Int64}} dev {{$port.Name}}\n{{if eq $index 0}}ip route add default via {{$gw.ValueString.String}}{{end}}\n{{end}}",
+        "template_content": "#!/bin/bash\n{{- range $index, $port := .Node.Ports}}\n{{- $pam := portattributemap $port}}\n{{- $gwa := get $pam \"gateway\" }}\n{{- $gw := index $gwa 0 }}\nip addr flush {{$port.Name}}\nip addr add {{$port.Ipv4Address.String}}/{{$port.Ipv4Prefix.Int64}} dev {{$port.Name}}\n{{if eq $index 0}}ip route add default via {{$gw.ValueString.String}}{{end}}\n{{end}}\n",
         "template_persistent_parameters": null
       },
       {
         "id": 3,
-        "name": "provisioner_initial_server_script",
-        "template_content": "#!/bin/bash\n{{- range $index, $port := .Node.Ports}}\n{{- $pam := portattributemap $port}}\n{{- $gwa := get $pam \"gateway\" }}\n{{- $gw := index $gwa 0 }}\nip addr add {{$port.Ipv4Address.String}}/{{$port.Ipv4Prefix.Int64}} dev {{$port.Name}}\n{{if eq $index 0}}ip route add default via {{$gw.ValueString.String}}{{end}}\n{{end}}",
+        "name": "kompira_initial_server_script",
+        "template_content": "#!/bin/bash\n{{- range $index, $port := .Node.Ports}}\n{{- $pam := portattributemap $port}}\n{{- $gwa := get $pam \"gateway\" }}\n{{- $gw := index $gwa 0 }}\nip addr flush {{$port.Name}}\nip addr add {{$port.Ipv4Address.String}}/{{$port.Ipv4Prefix.Int64}} dev {{$port.Name}}\n{{if eq $index 0}}ip route add default via {{$gw.ValueString.String}}{{end}}\n{{end}}\n",
         "template_persistent_parameters": null
       },
       {
         "id": 4,
         "name": "telnethop_initial_server_script",
-        "template_content": "#!/bin/bash\n{{- range $index, $port := .Node.Ports}}\n{{- $pam := portattributemap $port}}\n{{- $gwa := get $pam \"gateway\" }}\n{{- $gw := index $gwa 0 }}\nip addr add {{$port.Ipv4Address.String}}/{{$port.Ipv4Prefix.Int64}} dev {{$port.Name}}\n{{if eq $index 0}}ip route add default via {{$gw.ValueString.String}}{{end}}\n{{end}}",
+        "template_content": "#!/bin/bash\n{{- range $index, $port := .Node.Ports }}\n{{- $pam := portattributemap $port}}\n{{- $gwa := get $pam \"gateway\" }}\n{{- $gw := index $gwa 0 }}\nip addr flush {{$port.Name}}\nip addr add {{$port.Ipv4Address.String}}/{{$port.Ipv4Prefix.Int64}} dev {{$port.Name}}\n{{ end }}\n\n",
         "template_persistent_parameters": null
       },
       {
         "id": 5,
-        "name": "environment_template",
-        "template_content": "{{- $segments := multi .ModelStore \"segments\" \"\" -}}\n{{- $nodes := multi .ModelStore \"nodes\" \"preloads=Ports,NodeExtraAttributes,NodeExtraAttributes.NodeExtraAttributeField,NodeExtraAttributes.ValueNodeExtraAttributeOption\" -}}\n{{- $nodeMap := hash $nodes \"ID\" -}}\n{{- $serverTypes := multi .ModelStore \"node_extra_attribute_options\" \"q[node_extra_attribute_field_id]=3\" }}\n{{- $serverTypeMap := hash $serverTypes \"ID\" -}}\n{{- $ports := multi .ModelStore \"ports\" \"preloads=Node,PortExtraAttributes,PortExtraAttributes.PortExtraAttributeField,PortExtraAttributes.ValuePortExtraAttributeOption\" -}}\n{{- $portMap := hash $ports \"ID\" -}}\n{{- $segmentActualPortMap := map -}}\n{{- range $index, $segment := $segments -}}\n  {{- $segmentName := printf \"seg-seg%02d\" $index -}}\n  {{- $segmentActualPorts := slice -}}\n  {{- $segmentActualPortMap := put $segmentActualPortMap $segmentName $segmentActualPorts -}}\n{{- end -}}\n{{- range $index, $segment := $segments -}}\n  {{- $segmentName := printf \"seg-seg%02d\" $index -}}\n  {{- range $index2, $port := $segment.Ports -}}\n    {{- $port := get $portMap $port.ID -}}\n    {{- $pam := portattributemap $port}}\n    {{- $ps := get $pam \"pass_through\" }}\n    {{- $passthrough := index $ps 0 }}\n    {{- if eq $passthrough.ValueBool.Bool false}}\n      {{- $segmentActualPorts := get $segmentActualPortMap $segmentName -}}\n      {{- $segmentActualPorts := append $segmentActualPorts $port -}}\n      {{- $segmentActualPortMap := put $segmentActualPortMap $segmentName $segmentActualPorts -}}\n    {{- end -}}\n  {{- end -}}\n{{- end -}}\nprovider \"openvnet\" {\n  api_endpoint = \"http://172.16.3.10:9090/api/1.0\"\n}\n\n#\n# MAC address range for use in datapath-network etc.\n#\nresource \"openvnet_mac_range_group\" \"mrg\" {\n  uuid = \"mrg-dpg\"\n  mac_range {\n    begin_mac_address = \"08:00:27:aa:00:00\"\n    end_mac_address   = \"08:00:27:aa:ff:ff\"\n  }\n}\n\n#\n# Physical network\n#\nresource \"openvnet_network\" \"physical-network\" {\n  uuid         = \"nw-phys1\"\n  display_name = \"physical network that CI and ofs are on\"\n  ipv4_network = \"172.16.4.0\"\n  ipv4_prefix  = 24\n  network_mode = \"physical\"\n}\n\n#\n# CI datapath\n#\nresource \"openvnet_datapath\" \"dp-ci\" {\n  uuid         = \"dp-ci\"\n  node_id      = \"vna1\"\n  display_name = \"ci_datapath\"\n  dpid         = \"0x0000aaaaaaaaaaaa\"\n}\n\nresource \"openvnet_interface\" \"if-host-ci\" {\n  uuid                = \"if-ci\"\n  mode                = \"host\"\n  port_name           = \"eth1\"\n  mac_address         = \"02:01:00:00:00:01\"\n  owner_datapath_uuid = \"${openvnet_datapath.dp-ci.id}\"\n  network_uuid        = \"${openvnet_network.physical-network.uuid}\"\n  ipv4_address        = \"172.16.4.10\"\n}\n\n#\n# OFS datapath\n#\nresource \"openvnet_datapath\" \"dp-ofs\" {\n  uuid         = \"dp-ofs\"\n  node_id      = \"vna2\"\n  display_name = \"ofs_datapath\"\n  dpid         = \"0x0000bbbbbbbbbbbb\"\n}\n\n# The IP lease on the ofs host interface is a fake. OFS and CI are on the\n# same L2 network. This is done because the current tunnel manager code requires\n# an IP lease but we can safely assign a fake one since MAC2MAC tunnels ignore\n# IP addresses anyway. Only works if we're on the same L2 though.\nresource \"openvnet_interface\" \"if-host-ofs\" {\n  uuid                = \"if-ofs\"\n  mode                = \"host\"\n  port_name           = \"eth9\"\n  mac_address         = \"52:56:01:00:01:01\"\n  owner_datapath_uuid = \"${openvnet_datapath.dp-ofs.uuid}\"\n  network_uuid        = \"${openvnet_network.physical-network.uuid}\"\n  ipv4_address        = \"172.16.4.11\" # <= fake\n}\n\nresource \"openvnet_topology\" \"topo-physical\" {\n  uuid = \"topo-physical\"\n  mode = \"simple_underlay\"\n  network {\n    uuid = \"${openvnet_network.physical-network.uuid}\"\n  }\n\n  datapath {\n    uuid = \"${openvnet_datapath.dp-ci.uuid}\"\n    interface_uuid = \"${openvnet_interface.if-host-ci.uuid}\"\n  }\n\n  datapath {\n    uuid = \"${openvnet_datapath.dp-ofs.uuid}\"\n    interface_uuid = \"${openvnet_interface.if-host-ofs.uuid}\"\n  }\n}\n\n#\n# Below is the virtual network\n# The segments which have one or more non pass-through mode interfaces will be generated\n#\n{{- range $index, $segment := $segments}}\n  {{- $segmentName := printf \"seg-seg%02d\" $index }}\n  {{- $segmentActualPorts := get $segmentActualPortMap $segmentName }}\n  {{- $segmentActualPortCount := len $segmentActualPorts }}\n  {{- if ne $segmentActualPortCount 0 }}\nresource \"openvnet_segment\" \"{{$segmentName}}\" {\n  uuid = \"seg-seg{{printf \"%02d\" $index}}\"\n  mode = \"virtual\"\n}\n  {{- else}}\n# The segment {{$segmentName}} has no non-pass through ports, skipped\n  {{- end}}\n{{- end}}\n\nresource \"openvnet_topology\" \"topo-vnet\" {\n  uuid = \"topo-vnet\"\n  mode = \"simple_overlay\"\n\n  underlay {\n    uuid = \"${openvnet_topology.topo-physical.uuid}\"\n  }\n\n{{- range $index, $segment := $segments}}\n  {{- $segmentName := printf \"seg-seg%02d\" $index }}\n  {{- $segmentActualPorts := get $segmentActualPortMap $segmentName }}\n  {{- $segmentActualPortCount := len $segmentActualPorts }}\n  {{- if ne $segmentActualPortCount 0 }}\n  segment {\n    uuid = \"${openvnet_segment.{{$segmentName}}.uuid}\"\n  }\n  {{- else}}\n  # The segment {{$segmentName}} has no non-pass through ports, skipped\n  {{- end}}\n{{- end}}\n}\n\n{{- $interfaceIndexMap := map}}\n{{- range $index, $node := $nodes}}\n  {{- $interfaceIndexMap := put $interfaceIndexMap $node.Name 0}}\n{{- end}}\n{{- range $index, $segment := $segments}}\n\n#\n# Interfaces in segment seg-seg{{printf \"%02d\" $index}}\n# The interfaces which are not in pass-through mode will be generated\n#\n  {{- range $index2, $port := $segment.Ports}}\n    {{- $port := get $portMap $port.ID}}\n    {{- $node := get $nodeMap $port.Node.ID}}\n    {{- $interfaceIndex := get $interfaceIndexMap $port.Node.Name}}\n    {{- $pam := portattributemap $port}}\n    {{- $ps := get $pam \"pass_through\" }}\n    {{- $passthrough := index $ps 0 }}\n    {{- if eq $passthrough.ValueBool.Bool false}}\n      {{- $nam := nodeattributemap $node}}\n      {{- $vs := get $nam \"virtual\" }}\n      {{- $virtual := index $vs 0 }}\n      {{- if eq $virtual.ValueBool.Bool false}}\nresource \"openvnet_interface\" \"{{$port.Node.Name}}-seg{{printf \"%02d\" $index}}\" {\n  uuid                = \"if-{{$port.Node.Name}}{{$port.Name}}\"\n  port_name           = \"{{$port.Name}}\"\n  owner_datapath_uuid = \"${openvnet_datapath.dp-ofs.uuid}\"\n  segment_uuid        = \"${openvnet_segment.seg-seg{{printf \"%02d\" $index}}.uuid}\"\n  mac_address         = \"{{$port.MacAddress.String}}\"\n  mode                = \"vif\"\n}\n      {{- else}}\nresource \"openvnet_interface\" \"{{$port.Node.Name}}-{{printf \"%02d\" $interfaceIndex}}\" {\n  uuid                = \"if-{{$port.Node.Name}}{{printf \"%02d\" $interfaceIndex}}\"\n  port_name           = \"${openvdc_instance.{{$port.Node.Name}}.id}_{{printf \"%02d\" $interfaceIndex}}\"\n  segment_uuid        = \"${openvnet_segment.seg-seg{{printf \"%02d\" $index}}.uuid}\"\n  mac_address         = \"{{$port.MacAddress.String}}\"\n  mode                = \"vif\"\n}\n      {{- end}}\n      {{- $interfaceIndex := add $interfaceIndex 1}}\n      {{- $interfaceIndexMap := put $interfaceIndexMap $port.Node.Name $interfaceIndex}}\n    {{- else}}\n# The interface if-{{$port.Node.Name}}-{{$port.Name}} is in pass-through mode, skipped\n    {{- end}}\n  {{- end}}\n{{- end}}\n\n#\n# OpenVDC instances\n# Nodes which have a valid ServerType will be generated\n#\n{{- range $index, $node := $nodes }}\n  {{- $nam := nodeattributemap $node }}\n  {{- $sts := get $nam \"server_type\" }}\n  {{- $st := index $sts 0 }}\n  {{- if eq $st.ValueNodeExtraAttributeOptionID.Valid true }}\n    {{- $so := $st.ValueNodeExtraAttributeOptionID.Int64 }}\n    {{- $si :=  int $so }}\n    {{- $serverType := get $serverTypeMap $si }}\nresource \"openvdc_instance\" \"{{$node.Name}}\" {\n  template = \"{{$serverType.ValueString.String}}\"\n\n    {{- range $index2, $port := $node.Ports}}\n  interface {\n    type = \"veth\"\n    bridge = \"ovs\"\n    ipv4addr = \"{{$port.Ipv4Address.String}}\"\n    macaddr = \"{{$port.MacAddress.String}}\"\n  }\n\n    {{- end}}\n}\n  {{- else}}\n# The server type of the node {{$node.Name}} is None, skipped\n  {{- end}}\n{{- end}}\n\n#\n# Output\n# Nodes which have a valid ServerType will be generated\n#\n{{- range $index, $node := $nodes }}\n  {{- $nam := nodeattributemap $node }}\n  {{- $sts := get $nam \"server_type\" }}\n  {{- $st := index $sts 0 }}\n  {{- if eq $st.ValueNodeExtraAttributeOptionID.Valid true }}\noutput \"{{$node.Name}}\" {\n  value = \"${openvdc_instance.{{$node.Name}}.id}\"\n}\n  {{- else}}\n# The server type of the node {{$node.Name}} is None, skipped\n  {{- end}}\n{{- end}}",
+        "name": "terraform",
+        "template_content": "{{- $segments := multi .ModelStore \"segments\" \"\" -}}\n{{- $nodes := multi .ModelStore \"nodes\" \"preloads=Ports,NodeExtraAttributes,NodeExtraAttributes.NodeExtraAttributeField,NodeExtraAttributes.ValueNodeExtraAttributeOption\" -}}\n{{- $nodeMap := hash $nodes \"ID\" -}}\n{{- $serverTypes := multi .ModelStore \"node_extra_attribute_options\" \"q[node_extra_attribute_field_id]=3\" }}\n{{- $serverTypeMap := hash $serverTypes \"ID\" -}}\n{{- $ports := multi .ModelStore \"ports\" \"preloads=Node,PortExtraAttributes,PortExtraAttributes.PortExtraAttributeField,PortExtraAttributes.ValuePortExtraAttributeOption\" -}}\n{{- $portMap := hash $ports \"ID\" -}}\n{{- $segmentActualPortMap := map -}}\n{{- range $index, $segment := $segments -}}\n  {{- $segmentName := printf \"seg-seg%02d\" $index -}}\n  {{- $segmentActualPorts := slice -}}\n  {{- $segmentActualPortMap := put $segmentActualPortMap $segmentName $segmentActualPorts -}}\n{{- end -}}\n{{- range $index, $segment := $segments -}}\n  {{- $segmentName := printf \"seg-seg%02d\" $index -}}\n  {{- range $index2, $port := $segment.Ports -}}\n    {{- $port := get $portMap $port.ID -}}\n    {{- $pam := portattributemap $port}}\n    {{- $ps := get $pam \"pass_through\" }}\n    {{- $passthrough := index $ps 0 }}\n    {{- if eq $passthrough.ValueBool.Bool false}}\n      {{- $segmentActualPorts := get $segmentActualPortMap $segmentName -}}\n      {{- $segmentActualPorts := append $segmentActualPorts $port -}}\n      {{- $segmentActualPortMap := put $segmentActualPortMap $segmentName $segmentActualPorts -}}\n    {{- end -}}\n  {{- end -}}\n{{- end -}}\nprovider \"openvnet\" {\n  api_endpoint = \"http://172.16.3.10:9090/api/1.0\"\n}\n\n#\n# MAC address range for use in datapath-network etc.\n#\nresource \"openvnet_mac_range_group\" \"mrg\" {\n  uuid = \"mrg-dpg\"\n  mac_range {\n    begin_mac_address = \"08:00:27:aa:00:00\"\n    end_mac_address   = \"08:00:27:aa:ff:ff\"\n  }\n}\n\n#\n# Physical network\n#\nresource \"openvnet_network\" \"physical-network\" {\n  uuid         = \"nw-phys1\"\n  display_name = \"physical network that CI and ofs are on\"\n  ipv4_network = \"172.16.4.0\"\n  ipv4_prefix  = 24\n  mode = \"physical\"\n}\n\n#\n# CI datapath\n#\nresource \"openvnet_datapath\" \"dp-ci\" {\n  uuid         = \"dp-ci\"\n  node_id      = \"vna1\"\n  display_name = \"ci_datapath\"\n  dpid         = \"0x0000aaaaaaaaaaaa\"\n}\n\nresource \"openvnet_interface\" \"if-host-ci\" {\n  uuid                = \"if-ci\"\n  mode                = \"host\"\n  port_name           = \"eth1\"\n  mac_address         = \"02:01:00:00:00:01\"\n  owner_datapath_uuid = \"${openvnet_datapath.dp-ci.id}\"\n  network_uuid        = \"${openvnet_network.physical-network.uuid}\"\n  ipv4_address        = \"172.16.4.10\"\n}\n\n#\n# OFS datapath\n#\nresource \"openvnet_datapath\" \"dp-ofs\" {\n  uuid         = \"dp-ofs\"\n  node_id      = \"vna2\"\n  display_name = \"ofs_datapath\"\n  dpid         = \"0x0000bbbbbbbbbbbb\"\n}\n\n# The IP lease on the ofs host interface is a fake. OFS and CI are on the\n# same L2 network. This is done because the current tunnel manager code requires\n# an IP lease but we can safely assign a fake one since MAC2MAC tunnels ignore\n# IP addresses anyway. Only works if we're on the same L2 though.\nresource \"openvnet_interface\" \"if-host-ofs\" {\n  uuid                = \"if-ofs\"\n  mode                = \"host\"\n  port_name           = \"eth9\"\n  mac_address         = \"52:56:01:00:01:01\"\n  owner_datapath_uuid = \"${openvnet_datapath.dp-ofs.uuid}\"\n  network_uuid        = \"${openvnet_network.physical-network.uuid}\"\n  ipv4_address        = \"172.16.4.11\" # <= fake\n}\n\nresource \"openvnet_topology\" \"topo-physical\" {\n  uuid = \"topo-physical\"\n  mode = \"simple_underlay\"\n  network {\n    uuid = \"${openvnet_network.physical-network.uuid}\"\n  }\n\n  datapath {\n    uuid = \"${openvnet_datapath.dp-ci.uuid}\"\n    interface_uuid = \"${openvnet_interface.if-host-ci.uuid}\"\n  }\n\n  datapath {\n    uuid = \"${openvnet_datapath.dp-ofs.uuid}\"\n    interface_uuid = \"${openvnet_interface.if-host-ofs.uuid}\"\n  }\n}\n\n#\n# Below is the virtual network\n# The segments which have one or more non pass-through mode interfaces will be generated\n#\n{{- range $index, $segment := $segments}}\n  {{- $segmentName := printf \"seg-seg%02d\" $index }}\n  {{- $segmentActualPorts := get $segmentActualPortMap $segmentName }}\n  {{- $segmentActualPortCount := len $segmentActualPorts }}\n  {{- if ne $segmentActualPortCount 0 }}\nresource \"openvnet_segment\" \"{{$segmentName}}\" {\n  uuid = \"seg-seg{{printf \"%02d\" $index}}\"\n  mode = \"virtual\"\n}\n  {{- else}}\n# The segment {{$segmentName}} has no non-pass through ports, skipped\n  {{- end}}\n{{- end}}\n\nresource \"openvnet_topology\" \"topo-vnet\" {\n  uuid = \"topo-vnet\"\n  mode = \"simple_overlay\"\n\n  underlay {\n    uuid = \"${openvnet_topology.topo-physical.uuid}\"\n  }\n\n{{- range $index, $segment := $segments}}\n  {{- $segmentName := printf \"seg-seg%02d\" $index }}\n  {{- $segmentActualPorts := get $segmentActualPortMap $segmentName }}\n  {{- $segmentActualPortCount := len $segmentActualPorts }}\n  {{- if ne $segmentActualPortCount 0 }}\n  segment {\n    uuid = \"${openvnet_segment.{{$segmentName}}.uuid}\"\n  }\n  {{- else}}\n  # The segment {{$segmentName}} has no non-pass through ports, skipped\n  {{- end}}\n{{- end}}\n}\n\n{{- range $index, $segment := $segments}}\n\n#\n# Interfaces in segment seg-seg{{printf \"%02d\" $index}}\n# The interfaces which are not in pass-through mode will be generated\n#\n  {{- range $index2, $port := $segment.Ports}}\n    {{- $port := get $portMap $port.ID}}\n    {{- $node := get $nodeMap $port.Node.ID}}\n    {{- $pam := portattributemap $port}}\n    {{- $ps := get $pam \"pass_through\" }}\n    {{- $passthrough := index $ps 0 }}\n    {{- if eq $passthrough.ValueBool.Bool false}}\n      {{- $nam := nodeattributemap $node}}\n      {{- $vs := get $nam \"virtual\" }}\n      {{- $virtual := index $vs 0 }}\n      {{- if eq $virtual.ValueBool.Bool false}}\nresource \"openvnet_interface\" \"{{$port.Node.Name}}-seg{{printf \"%02d\" $index}}\" {\n  uuid                = \"if-{{$port.Node.Name}}{{$port.Name}}\"\n  port_name           = \"{{$port.Name}}\"\n  owner_datapath_uuid = \"${openvnet_datapath.dp-ofs.uuid}\"\n  segment_uuid        = \"${openvnet_segment.seg-seg{{printf \"%02d\" $index}}.uuid}\"\n  mac_address         = \"{{$port.MacAddress.String}}\"\n  mode                = \"vif\"\n}\n      {{- else}}\nresource \"openvnet_interface\" \"{{$port.Node.Name}}-{{printf \"%02d\" $port.Number}}\" {\n  uuid                = \"if-{{$port.Node.Name}}{{printf \"%02d\" $port.Number}}\"\n  port_name           = \"${openvdc_instance.{{$port.Node.Name}}.id}_{{printf \"%02d\" $port.Number}}\"\n  segment_uuid        = \"${openvnet_segment.seg-seg{{printf \"%02d\" $index}}.uuid}\"\n  #mac_address         = \"{{$port.MacAddress.String}}\"\n  mac_address         = \"${openvdc_instance.{{$port.Node.Name}}.interfaces.{{printf \"%d\" $port.Number}}.macaddr}\"\n  mode                = \"vif\"\n}\n      {{- end}}\n    {{- else}}\n# The interface if-{{$port.Node.Name}}-{{$port.Name}} is in pass-through mode, skipped\n    {{- end}}\n  {{- end}}\n{{- end}}\n\n#\n# OpenVDC instances\n# Nodes which have a valid ServerType will be generated\n#\n{{- range $index, $node := $nodes }}\n  {{- $nam := nodeattributemap $node }}\n  {{- $sts := get $nam \"server_type\" }}\n  {{- $st := index $sts 0 }}\n  {{- if eq $st.ValueNodeExtraAttributeOptionID.Valid true }}\n    {{- $so := $st.ValueNodeExtraAttributeOptionID.Int64 }}\n    {{- $si :=  int $so }}\n    {{- $serverType := get $serverTypeMap $si }}\nresource \"openvdc_instance\" \"{{$node.Name}}\" {\n  template = \"{{$serverType.ValueString.String}}\"\n\n  interfaces  = [\n    {{- $portMapByNumber := hash $node.Ports \"Number\" }}\n    {{- $portNumbers := fieldslice $node.Ports \"Number\" }}\n    {{- $portNumbers := sort $portNumbers \"asc\" }}\n    {{- range $portNumber := $portNumbers }}\n      {{- $port := get $portMapByNumber $portNumber}}\n      {\n        type = \"veth\"\n        bridge = \"ovs\"\n        ipv4addr = \"{{$port.Ipv4Address.String}}\"\n        macaddr = \"{{$port.MacAddress.String}}\"\n      },\n    {{- end}}\n  ]\n}\n  {{- else}}\n# The server type of the node {{$node.Name}} is None, skipped\n  {{- end}}\n{{- end}}\n\n#\n# Output\n# Nodes which have a valid ServerType will be generated\n#\n{{- range $index, $node := $nodes }}\n  {{- $nam := nodeattributemap $node }}\n  {{- $sts := get $nam \"server_type\" }}\n  {{- $st := index $sts 0 }}\n  {{- if eq $st.ValueNodeExtraAttributeOptionID.Valid true }}\noutput \"{{$node.Name}}\" {\n  value = \"${openvdc_instance.{{$node.Name}}.id}\"\n}\n  {{- else}}\n# The server type of the node {{$node.Name}} is None, skipped\n  {{- end}}\n{{- end}}\n",
         "template_persistent_parameters": null
       },
       {
@@ -6426,6 +6725,7 @@
         "template_content": "#!/bin/bash\n\nfunction loadInstanceIDs() {\n  cd ..\n  echo \"declare -A instances\"\n  terraform show | egrep -o 'openvdc_instance.[^:]+:' | sed -e 's/openvdc_instance.\\([^:]*\\):/\\1/g' | while read instance_name; do\n    instance_id=`terraform show | grep -a1 \"openvdc_instance.${instance_name}:\" | tail -n1 | awk -F\"= \" '{print $2}'`\n    echo \"instances[${instance_name}]=${instance_id}\"\n  done\n}\n\n`loadInstanceIDs`\n\nclient_instance_id=\"${instances[{{.SourcePort.Node.Name}}]}\"\nserver_instance_id=\"${instances[{{.DestinationPort.Node.Name}}]}\"\n\nopenvdc wait ${client_instance_id} running\nif [ \"${server_instance_id}\" != \"\" ]; then\n  openvdc wait ${server_instance_id} running\nfi\n\nopenvdc console ${server_instance_id} <<EOF\nservice httpd start\nEOF\n\nopenvdc console ${client_instance_id} <<EOF\ncurl --insecure https://{{.DestinationPort.Ipv4Address.String}}/\n{{if eq .Access true}}\nif [ \\$? -eq 0 ]; then\n  exit 0\nelse\n  exit 1\nfi\n{{else}}\nif [ \\$? -eq 0 ]; then\n  exit 1\nelse\n  exit 0\nfi\n{{end}}\n",
         "template_persistent_parameters": null
       }
-    ]
+    ],
+    "vlans": []
   }
 }
