@@ -8,7 +8,7 @@ func init() {
 		claySubModuleInformationList: []*claySubModuleInformation{
 			{
 				name:     "clay",
-				revision: "built-manually",
+				revision: "d9d014dc4bbc169869bf05e6ac0b74ee8d63b3a7",
 			},
 		},
 	}
