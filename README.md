@@ -21,43 +21,20 @@ via Wikimedia Commons
 ![Concept](https://github.com/qb0C80aE/clay/raw/develop/images/concept.png)
 ![Usecase](https://github.com/qb0C80aE/clay/raw/develop/images/usecase.png)
 
-## Related modules
-
-* [Loam](https://github.com/qb0C80aE/loam)
-  * The basic models and functions work on Clay
-* [Pottery](https://github.com/qb0C80aE/pottery)
-  * A simple GUI module works with Loam on Clay
-
-### Pottery UI
-
-#### UI - network design
-![Network design](https://github.com/qb0C80aE/pottery/raw/develop/images/sample1.png)
-
-#### UI - physial diagram from the system model store
-![Physical diagram](https://github.com/qb0C80aE/pottery/raw/develop/images/sample2.png)
-
-#### UI - logical diagram from the system model store
-![Logical diagram](https://github.com/qb0C80aE/pottery/raw/develop/images/sample3.png)
-
 # How to build and run
 
 ```bash
 $ # Suppose that $HOME is /home/user, and $GOPATH is /home/user/go.
-$ # Note: Please install glide first.
-$ go get github.com/Masterminds/glide
+$ # Note: Please install dep first.
+$ go get -u github.com/golang/dep/cmd/dep
 $ # Note: If there are any tools what modules that you want to install into clay depend on, please install first like below.
-$ # go get github.com/mattn/go-bindata/...
+$ # go get -u github.com/golang/lint/golint
+$ # go get -u github.com/jessevdk/go-assets-builder
 $ mkdir -p $GOPATH/src/github.com/qb0C80aE/
 $ cd $GOPATH/src/github.com/qb0C80aE/
 $ git clone https://github.com/qb0C80aE/clay.git
 $ cd $GOPATH/src/github.com/qb0C80aE/clay
-$ # Edit: If you have modules what you want to install into Clay, add lines like below into the import section of main.go.
-$ # _ "github.com/qb0C80aE/loam" // Install Loam module by importing
-$ # _ "github.com/qb0C80aE/pottery" // Install Pottery module by importing
-$ # Note: If you have added modules into main.go, execute glide get to retrieve those modules like below.
-$ # glide get github.com/qb0C80aE/loam
-$ # glide get github.com/qb0C80aE/pottery
-$ glide install
+$ dep ensure
 $ go generate -tags=prebuild ./...
 $ go build
 $ # Note: If you want to build Clay as a statically linked single binary file, add the flag like below.
@@ -67,28 +44,22 @@ $ ./clay &
 
 The server runs at http://localhost:8080 by default.
 
-Creating go-sqlite3 build archive makes rebuild time shorter.
-
-```bash
-$ go install github.com/qb0C80aE/clay/vendor/github.com/mattn/go-sqlite3
-```
-
-You'll see ``$GOPATH/pkg/linux_amd64/github.com/qb0C80aE/clay/vendor/github.com/mattn/go-sqlite3.a``.
-
 ## Environmental variables
 
 You can give the environmental variables to Clay.
 
-|Key         |Description                                                                      |Options    |Default  |
-|:-----------|:--------------------------------------------------------------------------------|:----------|:--------|
-|HOST        |The host to listen.                                                              |-          |localhost|
-|PORT        |The port to listen.                                                              |-          |8080     |
-|DB_MODE     |The indentifier how the db is managed.                                           |memory/file|memory   |
-|DB_FILE_PATH|The path where the db file is located. This value is used if DB_MODE=file is set.|-          |clay.db  |
+|Key                  |Description                                                                      |Options          |Default           |
+|:--------------------|:--------------------------------------------------------------------------------|:----------------|:-----------------|
+|CLAY_CONFIG_FILE_PATH|The path where the db file is located. This value is used if DB_MODE=file is set.|-                |./clay_config.json|
+|CLAY_HOST            |The host to listen.                                                              |-                |localhost         |
+|CLAY_PORT            |The port to listen.                                                              |-                |8080              |
+|CLAY_DB_MODE         |The indentifier how the db is managed.                                           |memory/file      |memory            |
+|CLAY_DB_FILE_PATH    |The path where the db file is located. This value is used if DB_MODE=file is set.|-                |./clay.db         |
+|CLAY_ASSET_MODE      |The indentifier how the db is managed.                                           |external/internal|external          |
 
 ## Cross-compile
 
-Due to ``mattn/go-sqlite3``, cross-compilers like mingw gcc are required.
+Clay is using ``mattn/go-sqlite3``, and it requires cross-compilers like mingw gcc.
 For example, you can build Clay for Linux 32bit, Windows 32bit and 64bit on Ubuntu 16.04.2 LTS 64bit.
 
 ```bash
@@ -157,14 +128,6 @@ PS> cd $env:GOPATH/src/github.com/qb0C80aE/clay
 PS> powershell { $env:PATH+=";C:\msys64\mingw64\bin"; go build }
 PS> .\clay.exe
 ```
-
-Creating go-sqlite3 build archive makes rebuild time shorter.
-
-```
-PS> powershell { $env:PATH+=";C:\msys64\mingw64\bin"; go install github.com/mattn/go-sqlite3 }
-```
-
-You'll see ``$GOPATH\pkg\windows_amd64\github.com\mattn\go-sqlite3.a``.
 
 # How to use
 
@@ -237,7 +200,7 @@ db.Exec(`create trigger if not exists DeleteServerInitializationConfig delete on
 
 Simple Rest API using [Gin](https://github.com/gin-gonic/gin)(framework) & [GORM](https://github.com/jinzhu/gorm)(orm)
 
-## Endpoint list
+## Default Endpoint List
 
 ### Designs Resource
 
@@ -271,4 +234,4 @@ GET    /templates/:id/generation
 # Thanks
 
 * The base part of Clay was generated by [apig](https://github.com/wantedly/apig)
-* Clay is using [Glide](https://github.com/Masterminds/glide) to manage dependencies of packages
+* Clay is using [dep](https://github.com/Masterminds/glide) to manage dependencies of packages
